@@ -29,7 +29,7 @@ For the other two command-line arguments, you can use any name you want for your
 2. Go to `${KAIROS_LIB}` and then run `./create_folders.sh` to create the folders for inputs and outputs. 
 3. Set up the device number for each GPU-based component, e.g.,https://github.com/blender-nlp/RESIN/blob/f6f7c761731ccd70ca8917b9579ae40f97e8dadf/docker-compose.yaml#L38 NOTE: Running the whole pipeline typically needs at least 3*16GB GPUs.
 4. Start the APIs by running: `docker-compose up`. It could be pretty slow when you set up the APIs for the first time, since docker-compose needs to pull all the dockers from dockerhub before running it.
-5. Put the data folder (LDC formatted) under `{KAIROS_LIB}/resin/resin/input/` and put the schema library (JSON files) under `{KAIROS_LIB}/resin/resin/schemas/resin` (some example schema files can be found at https://github.com/RESIN-KAIROS/schemalib/tree/main/phase2b/curated)
+5. Put the data folder (LDC formatted) under `{KAIROS_LIB}/resin/resin/input/` and put the schema library (JSON files) under `{KAIROS_LIB}/resin/resin/schemas/resin` (some example schema files can be found at `schemas`)
 
 ### Run the Pipeline
 After successfully setting up the APIs and put the data and schema files under the correct path, you can make a POST request to the main API to start processing:
