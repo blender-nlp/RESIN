@@ -1,0 +1,4674 @@
+{
+    "@id": "resin:Submissions/TA1/Riot",
+    "sdfVersion": "3.0.0",
+    "version": "resin:Phase2b",
+    "events": [
+        {
+            "@id": "resin:Events/20000/riot-event",
+            "children": [
+                "resin:Events/20001/Precursors",
+                "resin:Events/20002/Riot",
+                "resin:Events/20003/Post-Riot_Authority_Response",
+                "resin:Events/20004/Post-Riot_Government_Response",
+                "resin:Events/20005/Post-Riot_Society_Response",
+                "resin:Events/20006/Post-Riot_Media_Response",
+                "resin:Events/20007/Post-Riot_Business_Response",
+                "resin:Events/20008/International_Response",
+                "resin:Events/20009/Civil_Justice"
+            ],
+            "children_gate": "or",
+            "description": "A riot is defined by acts of collective violence. While peaceful protests may lead to riots, the peaceful protests themselves are not within the scope of KAIROS. The basic nature of a riot is unplanned and spontaneous, arising in a haphazard manner with the assembling of a crowd that turns violent and challenge the normative social order.",
+            "name": "Riot Event",
+            "entities": [
+                {
+                    "@id": "resin:Entities/10000/rioter",
+                    "name": "rioter",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/10001/police",
+                    "name": "police",
+                    "wd_label": "police",
+                    "wd_node": "wd:Q35535",
+                    "wd_description": "constituted body of persons empowered by the state to enforce the law"
+                },
+                {
+                    "@id": "resin:Entities/10002/business",
+                    "name": "business",
+                    "wd_label": "business",
+                    "wd_node": "wd:Q4830453",
+                    "wd_description": "organization involved in commercial, industrial, or professional activity"
+                },
+                {
+                    "@id": "resin:Entities/10003/riot-group",
+                    "name": "rioter group",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/10004/person-generic",
+                    "name": "person (generic)",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/10005/general-public",
+                    "name": "general public",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/10006/riot-location",
+                    "name": "riot location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/10007/building-generic",
+                    "name": "building (generic)",
+                    "wd_label": "building",
+                    "wd_node": "wd:Q41176",
+                    "wd_description": "structure, typically with a roof and walls, standing more or less permanently in one place"
+                },
+                {
+                    "@id": "resin:Entities/10008/state1",
+                    "name": "state1",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/10009/state2",
+                    "name": "state2",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "resin:Entities/10010/government",
+                    "name": "government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "resin:Entities/10011/ideology-generic",
+                    "name": "ideology (generic)",
+                    "wd_label": "ideology",
+                    "wd_node": "wd:Q7257",
+                    "wd_description": "set of ideas that form one's aims, expectations and actions"
+                },
+                {
+                    "@id": "resin:Entities/10012/location-generic",
+                    "name": "location (generic)",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "resin:Entities/10013/court-generic",
+                    "name": "court (generic)",
+                    "wd_label": "court",
+                    "wd_node": "wd:Q41487",
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                },
+                {
+                    "@id": "resin:Entities/10014/politician",
+                    "name": "politician",
+                    "wd_label": "politician",
+                    "wd_node": "wd:Q82955",
+                    "wd_description": "person involved in politics, person who holds or seeks positions in government"
+                },
+                {
+                    "@id": "resin:Entities/10015/country",
+                    "name": "country",
+                    "wd_label": "country",
+                    "wd_node": "wd:Q6256",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                },
+                {
+                    "@id": "resin:Entities/10016/electoral-result",
+                    "name": "electoral result",
+                    "wd_label": "electoral_result",
+                    "wd_node": "wd:Q19571328"
+                },
+                {
+                    "@id": "resin:Entities/10017/victim-generic",
+                    "name": "victim (generic)",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q215627",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood"
+                },
+                {
+                    "@id": "resin:Entities/10018/law-generic",
+                    "name": "law (generic)",
+                    "wd_label": "law",
+                    "wd_node": "wd:Q7748",
+                    "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+                },
+                {
+                    "@id": "resin:Entities/10019/riot-reason",
+                    "name": "riot reason",
+                    "wd_label": "ideology",
+                    "wd_node": "wd:Q7257",
+                    "wd_description": "set of ideas that form one's aims, expectations and actions"
+                },
+                {
+                    "@id": "resin:Entities/10020/appliance-generic",
+                    "name": "appliance (generic)",
+                    "wd_label": "appliance",
+                    "wd_node": "wd:Q1183543",
+                    "wd_description": "object with which something can be worked on, manufactured or effected"
+                },
+                {
+                    "@id": "resin:Entities/10021/riot-weapon",
+                    "name": "riot weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/10022/public-weapon",
+                    "name": "public weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/10023/police-weapon",
+                    "name": "police weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "resin:Entities/10024/media-company",
+                    "name": "media company",
+                    "wd_label": "media_company",
+                    "wd_node": "wd:Q1331793",
+                    "wd_description": "business that focuses primarily in mass media"
+                },
+                {
+                    "@id": "resin:Entities/10025/foreign-gov",
+                    "name": "foreign government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "resin:Entities/10026/foreign-country",
+                    "name": "foreign country",
+                    "wd_label": "country",
+                    "wd_node": "wd:Q6256",
+                    "wd_description": "distinct region in geography; a broad term that can include political divisions"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "resin:Relations/40000/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40001/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40002/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10003/riot-group",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40003/",
+                    "name": "part of",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10003/riot-group",
+                    "wd_node": "wdt:P361",
+                    "wd_label": "part of",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "resin:Relations/40004/",
+                    "name": "item operated",
+                    "relationSubject": "resin:Entities/10021/riot-weapon",
+                    "relationObject": "resin:Entities/10000/rioter",
+                    "wd_node": "wdt:P121",
+                    "wd_label": "item operated",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "resin:Relations/40005/",
+                    "name": "item operated",
+                    "relationSubject": "resin:Entities/10022/public-weapon",
+                    "relationObject": "resin:Entities/10005/general-public",
+                    "wd_node": "wdt:P121",
+                    "wd_label": "item operated",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "resin:Relations/40006/",
+                    "name": "item operated",
+                    "relationSubject": "resin:Entities/10023/police-weapon",
+                    "relationObject": "resin:Entities/10001/police",
+                    "wd_node": "wdt:P121",
+                    "wd_label": "item operated",
+                    "wd_description": "equipment, installation or service operated by the subject"
+                },
+                {
+                    "@id": "resin:Relations/40007/",
+                    "name": "member of",
+                    "relationSubject": "resin:Entities/10014/politician",
+                    "relationObject": "resin:Entities/10010/government",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                },
+                {
+                    "@id": "resin:Relations/40008/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10005/general-public",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40009/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10005/general-public",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40010/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10017/victim-generic",
+                    "relationObject": "resin:Entities/10012/location-generic",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40011/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10024/media-company",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40012/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10013/court-generic",
+                    "relationObject": "resin:Entities/10012/location-generic",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40013/",
+                    "name": "affiliation",
+                    "relationSubject": "resin:Entities/10014/politician",
+                    "relationObject": "resin:Entities/10010/government",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                },
+                {
+                    "@id": "resin:Relations/40014/",
+                    "name": "affiliation",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10003/riot-group",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                },
+                {
+                    "@id": "resin:Relations/40015/",
+                    "name": "affiliation",
+                    "relationSubject": "resin:Entities/10017/victim-generic",
+                    "relationObject": "resin:Entities/10005/general-public",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                },
+                {
+                    "@id": "resin:Relations/40016/",
+                    "name": "affiliation",
+                    "relationSubject": "resin:Entities/10017/victim-generic",
+                    "relationObject": "resin:Entities/10005/general-public",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                },
+                {
+                    "@id": "resin:Relations/40017/",
+                    "name": "affiliation",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10010/government",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                },
+                {
+                    "@id": "resin:Relations/40018/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10025/foreign-gov",
+                    "relationObject": "resin:Entities/10026/foreign-country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40019/",
+                    "name": "has cause",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10019/riot-reason",
+                    "wd_node": "wdt:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "resin:Relations/40020/",
+                    "name": "has cause",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10003/riot-group",
+                    "wd_node": "wdt:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "resin:Relations/40021/",
+                    "name": "has cause",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10021/riot-weapon",
+                    "wd_node": "wdt:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "resin:Relations/40022/",
+                    "name": "occupant",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P466",
+                    "wd_label": "occupant",
+                    "wd_description": "person or organization occupying property"
+                },
+                {
+                    "@id": "resin:Relations/40023/",
+                    "name": "occupant",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P466",
+                    "wd_label": "occupant",
+                    "wd_description": "person or organization occupying property"
+                },
+                {
+                    "@id": "resin:Relations/40024/",
+                    "name": "occupant",
+                    "relationSubject": "resin:Entities/10003/riot-group",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P466",
+                    "wd_label": "occupant",
+                    "wd_description": "person or organization occupying property"
+                },
+                {
+                    "@id": "resin:Relations/40025/",
+                    "name": "has cause",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10000/rioter",
+                    "wd_node": "wdt:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "resin:Relations/40026/",
+                    "name": "has cause",
+                    "relationSubject": "resin:Entities/10003/riot-group",
+                    "relationObject": "resin:Entities/10019/riot-reason",
+                    "wd_node": "wdt:P828",
+                    "wd_label": "has cause",
+                    "wd_description": "underlying cause, thing that ultimately resulted in this effect"
+                },
+                {
+                    "@id": "resin:Relations/40027/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10000/rioter",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40028/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10001/police",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40029/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10003/riot-group",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40030/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10018/law-generic",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40031/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10004/person-generic",
+                    "relationObject": "resin:Entities/10012/location-generic",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40032/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10011/ideology-generic",
+                    "relationObject": "resin:Entities/10012/location-generic",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40033/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10014/politician",
+                    "relationObject": "resin:Entities/10015/country",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40034/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10002/business",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                },
+                {
+                    "@id": "resin:Relations/40035/",
+                    "name": "location",
+                    "relationSubject": "resin:Entities/10007/building-generic",
+                    "relationObject": "resin:Entities/10006/riot-location",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event"
+                }
+            ],
+            "wd_label": "event",
+            "wd_node": "wd:Q1656682",
+            "wd_description": "temporary and scheduled happening, like a conference, festival or competition",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20001/Precursors",
+            "name": "Precursors",
+            "description": "Background context which may have contributed to the event.",
+            "wd_label": "incident",
+            "wd_node": "wd:Q11371169",
+            "wd_description": "violent or disruptive occurrence that may precipitate a larger crisis",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20002/Riot"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20016/war",
+                "resin:Events/20017/trial",
+                "resin:Events/20018/election_outcome",
+                "resin:Events/20019/policy_issue",
+                "resin:Events/20020/crime",
+                "resin:Events/20021/legislation",
+                "resin:Events/20022/economic_issue",
+                "resin:Events/20023/demographic_issue",
+                "resin:Events/20024/public_grievance",
+                "resin:Events/20025/crowd_assembly",
+                "resin:Events/20093/Taking_office",
+                "resin:Events/20097/Work",
+                "resin:Events/20107/gathering",
+                "resin:Events/20114/planning",
+                "resin:Events/20116/organizing"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20002/Riot",
+            "name": "Riot",
+            "description": "Riot ensues.",
+            "wd_label": "riot",
+            "wd_node": "wd:Q124757",
+            "wd_description": "form of civil disorder",
+            "isSchema": true,
+            "repeatable": true,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20003/Post-Riot_Authority_Response",
+                "resin:Events/20004/Post-Riot_Government_Response",
+                "resin:Events/20005/Post-Riot_Society_Response",
+                "resin:Events/20006/Post-Riot_Media_Response",
+                "resin:Events/20007/Post-Riot_Business_Response",
+                "resin:Events/20008/International_Response"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20010/Rioter_Action",
+                "resin:Events/20011/Society_Response",
+                "resin:Events/20012/Authority_Response",
+                "resin:Events/20013/Media_Response",
+                "resin:Events/20014/Business_Response",
+                "resin:Events/20015/Government_Response"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20003/Post-Riot_Authority_Response",
+            "name": "Post-Riot Authority Response",
+            "description": "Police take control of the riot.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20009/Civil_Justice"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20059/investigations",
+                "resin:Events/20060/arrests",
+                "resin:Events/20061/curfew",
+                "resin:Events/20096/Leadership"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20004/Post-Riot_Government_Response",
+            "name": "Post-Riot Government Response",
+            "description": "After the riot, the government takes action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20009/Civil_Justice"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20062/policy_change",
+                "resin:Events/20063/public_statement",
+                "resin:Events/20064/election",
+                "resin:Events/20065/resignation",
+                "resin:Events/20088/shutdown",
+                "resin:Events/20089/condemnation",
+                "resin:Events/20100/Succession"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20005/Post-Riot_Society_Response",
+            "name": "Post-Riot Society Response",
+            "description": "After the riot, society takes action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20009/Civil_Justice"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20066/public_petitions",
+                "resin:Events/20067/society_reconstruction",
+                "resin:Events/20094/Social_inclusion",
+                "resin:Events/20112/change"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20006/Post-Riot_Media_Response",
+            "name": "Post-Riot Media Response",
+            "description": "After the riot, media takes action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20009/Civil_Justice"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20068/journalism",
+                "resin:Events/20069/propaganda",
+                "resin:Events/20070/notify_public",
+                "resin:Events/20106/Announcement",
+                "resin:Events/20109/Accusation"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20007/Post-Riot_Business_Response",
+            "name": "Post-Riot Business Response",
+            "description": "After the riot, businesses takes action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20071/reopening",
+                "resin:Events/20072/augment_services",
+                "resin:Events/20105/Loss"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20008/International_Response",
+            "name": "International Response",
+            "description": "After the riot, the international community takes action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20073/travel_alert",
+                "resin:Events/20074/express_support",
+                "resin:Events/20075/condemn_actions",
+                "resin:Events/20076/international_petitions",
+                "resin:Events/20098/support"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20009/Civil_Justice",
+            "name": "Civil Justice",
+            "description": "A legal hearing brings justice to the riot.",
+            "wd_label": "legal_hearing",
+            "wd_node": "wd:Q545861",
+            "wd_description": "A legal hearing",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20077/contact_attorney",
+                "resin:Events/20078/file_complaint",
+                "resin:Events/20079/answer_complaint",
+                "resin:Events/20080/discovery",
+                "resin:Events/20081/motion",
+                "resin:Events/20082/motionOutlinks",
+                "resin:Events/20084/settlement",
+                "resin:Events/20086/judgement",
+                "resin:Events/20087/appeal",
+                "resin:Events/20099/Amenity",
+                "resin:Events/20108/reception"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20010/Rioter_Action",
+            "name": "Rioter Action",
+            "description": "Rioter takes action to riot.",
+            "wd_label": "action",
+            "wd_node": "wd:Q4026292",
+            "wd_description": "something an agent can do or perform",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "resin:Events/20011/Society_Response",
+                "resin:Events/20012/Authority_Response",
+                "resin:Events/20013/Media_Response",
+                "resin:Events/20014/Business_Response",
+                "resin:Events/20015/Government_Response"
+            ],
+            "participants": [],
+            "children": [
+                "resin:Events/20026/escalation",
+                "resin:Events/20027/social_media_sharing",
+                "resin:Events/20028/looting",
+                "resin:Events/20029/arson",
+                "resin:Events/20030/physical_conflict",
+                "resin:Events/20031/taunting",
+                "resin:Events/20032/harassment",
+                "resin:Events/20033/property_damage",
+                "resin:Events/20034/trespassing",
+                "resin:Events/20091/Use",
+                "resin:Events/20092/Killing",
+                "resin:Events/20095/Involvement",
+                "resin:Events/20101/Riot",
+                "resin:Events/20102/Walking",
+                "resin:Events/20103/throwing",
+                "resin:Events/20104/Knife_fight",
+                "resin:Events/20111/Public_speaking",
+                "resin:Events/20113/collateral_damage",
+                "resin:Events/20115/violent_crime",
+                "resin:Events/20117/meeting",
+                "resin:Events/20118/shooting"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20011/Society_Response",
+            "name": "Society Response",
+            "description": "Society responds to vigilante action.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20035/vigilantism",
+                "resin:Events/20036/copycat_violence"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20012/Authority_Response",
+            "name": "Authority Response",
+            "description": "Authority responds to the riot.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20037/containment_measures",
+                "resin:Events/20038/clash",
+                "resin:Events/20039/rioters_disperse",
+                "resin:Events/20040/police_attack_rioters",
+                "resin:Events/20041/rioters_attack_police",
+                "resin:Events/20042/injury_of_rioters",
+                "resin:Events/20043/injury_of_police",
+                "resin:Events/20044/death_of_rioters",
+                "resin:Events/20045/death_of_police",
+                "resin:Events/20046/injury_of_bystanders",
+                "resin:Events/20047/death_of_bystanders",
+                "resin:Events/20055/investigations",
+                "resin:Events/20056/curfew",
+                "resin:Events/20057/evacuations",
+                "resin:Events/20058/arrests"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20013/Media_Response",
+            "name": "Media Response",
+            "description": "Media responds to the riot.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20048/public_warning",
+                "resin:Events/20049/propagate_propaganda",
+                "resin:Events/20090/Reporting",
+                "resin:Events/20119/speech"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20014/Business_Response",
+            "name": "Business Response",
+            "description": "Buisnesses respond to the riot.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20050/business_closure",
+                "resin:Events/20051/reduce_services"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20015/Government_Response",
+            "name": "Government Response",
+            "description": "The government responds to the riot.",
+            "wd_node": "wd:Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "resin:Events/20052/shutdown",
+                "resin:Events/20053/public_statement",
+                "resin:Events/20054/resignation",
+                "resin:Events/20110/control"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20016/war",
+            "name": "war",
+            "description": "War is perpetrated by one state against another.",
+            "wd_node": "wd:Q198",
+            "wd_label": "war",
+            "wd_description": "organised and prolonged violent conflict between states",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30000/war/1",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "resin:Entities/10008/state1"
+                },
+                {
+                    "@id": "resin:Participants/30001/war/2",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "resin:Entities/10009/state2"
+                },
+                {
+                    "@id": "resin:Participants/30002/war/3",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30003/war/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10012/location-generic"
+                }
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "resin:Events/20017/trial",
+            "name": "trial",
+            "description": "A legal hearing brings justice to the riot.",
+            "wd_node": "wd:Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30004/trial/1",
+                    "roleName": "A0_pag__litigant",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30005/trial/2",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30006/trial/3",
+                    "roleName": "A2_gol__adjudicator",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30007/trial/4",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30008/trial/5",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10012/location-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20018/election_outcome",
+            "name": "election outcome",
+            "description": "The outcome of an election is announced.",
+            "wd_node": "wd:Q40231",
+            "wd_label": "election",
+            "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30009/election outcome/1",
+                    "roleName": "A0_pag_agent_voters",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30010/election outcome/2",
+                    "roleName": "A1_ppt_theme_candidate",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30011/election outcome/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                },
+                {
+                    "@id": "resin:Participants/30012/election outcome/4",
+                    "roleName": "A2_prd_result_office_or_position",
+                    "entity": "resin:Entities/10016/electoral-result"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20019/policy_issue",
+            "name": "policy issue",
+            "description": "An issue with legislation is raised and sparks a riot.",
+            "wd_label": "legislation",
+            "wd_node": "wd:Q49371",
+            "wd_description": "law enacted by a legislature or other governing body",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30013/policy issue/1",
+                    "roleName": "A0_pag_law-giving_body",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30014/policy issue/2",
+                    "roleName": "A1_ppt_thing_controlled",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30015/policy issue/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20020/crime",
+            "name": "crime",
+            "description": "General crime is comitted during the riot.",
+            "wd_label": "crime",
+            "wd_node": "wd:Q83267",
+            "wd_description": "unlawful act forbidden and punishable by criminal law",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30016/crime/1",
+                    "roleName": "A0_pag__perp",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30017/crime/2",
+                    "roleName": "A2_gol__victim",
+                    "entity": "resin:Entities/10017/victim-generic"
+                },
+                {
+                    "@id": "resin:Participants/30018/crime/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10012/location-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20021/legislation",
+            "name": "legislation",
+            "description": "The legislative process influences a riot.",
+            "wd_node": "wd:Q3406566",
+            "wd_label": "legislative_process",
+            "wd_description": "formal process leading to the approval of a law",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30019/legislation/1",
+                    "roleName": "A0_pag_agent_legislative_body",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30020/legislation/2",
+                    "roleName": "A1_ppt_thing_enacted",
+                    "entity": "resin:Entities/10018/law-generic"
+                },
+                {
+                    "@id": "resin:Participants/30021/legislation/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20022/economic_issue",
+            "name": "economic issue",
+            "description": "An economic issue sparks a riot.",
+            "wd_label": "class_struggle",
+            "wd_node": "wd:Q1744607",
+            "wd_description": "tension or antagonism which exists in society due to competing socioeconomic interests",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30022/economic issue/1",
+                    "roleName": "A0_pag_hostile_entity",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30023/economic issue/2",
+                    "roleName": "A1_ppt_entity_antagonized",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30024/economic issue/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20023/demographic_issue",
+            "name": "demographic issue",
+            "description": "A demographic issue sparks a riot.",
+            "wd_label": "feud",
+            "wd_node": "wd:Q467033",
+            "wd_description": "long-running argument or fight, often between social groups of people, especially families or clans",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20024/public_grievance"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30025/demographic issue/1",
+                    "roleName": "A0_pag_first_fighter",
+                    "entity": "resin:Entities/10008/state1"
+                },
+                {
+                    "@id": "resin:Participants/30026/demographic issue/2",
+                    "roleName": "A1_com_second_fighter",
+                    "entity": "resin:Entities/10009/state2"
+                },
+                {
+                    "@id": "resin:Participants/30027/demographic issue/3",
+                    "roleName": "A2_ppt_spoils_or_point_of_contention",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30028/demographic issue/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10012/location-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20024/public_grievance",
+            "name": "public grievance",
+            "description": "During the riot, the public expresses a grievance.",
+            "wd_label": "affront",
+            "wd_node": "wd:Q382965",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20025/crowd_assembly"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30029/public grievance/1",
+                    "roleName": "A0_pag_offender",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30030/public grievance/2",
+                    "roleName": "A1_ppt_offended",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30031/public grievance/3",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30032/public grievance/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20025/crowd_assembly",
+            "name": "crowd assembly",
+            "description": "The general public assembles into a crowd.",
+            "wd_label": "self-assembly",
+            "wd_node": "wd:Q910150",
+            "wd_description": "Process of a disordered system forming organized structures without external direction.",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30033/crowd assembly/1",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30034/crowd assembly/2",
+                    "roleName": "A1_ppt_theme",
+                    "entity": "resin:Entities/10019/riot-reason"
+                },
+                {
+                    "@id": "resin:Participants/30035/crowd assembly/3",
+                    "roleName": "A2_prd_group",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30036/crowd assembly/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": [],
+            "children_gate": "or"
+        },
+        {
+            "@id": "resin:Events/20026/escalation",
+            "name": "escalation",
+            "description": "The riot is escalated.",
+            "wd_label": "conflict_escalation",
+            "wd_node": "wd:Q5160184",
+            "wd_description": "process by which conflicts grow in severity over time",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20027/social_media_sharing",
+                "resin:Events/20028/looting",
+                "resin:Events/20029/arson",
+                "resin:Events/20030/physical_conflict",
+                "resin:Events/20031/taunting",
+                "resin:Events/20032/harassment",
+                "resin:Events/20033/property_damage",
+                "resin:Events/20034/trespassing"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30037/escalation/1",
+                    "roleName": "A0_pag_causer",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30038/escalation/2",
+                    "roleName": "A1_ppt_thing_becoming_higher",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30039/escalation/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20027/social_media_sharing",
+            "name": "social media sharing",
+            "description": "The general public shares news about the riot on social media.",
+            "wd_label": "remote_communication",
+            "wd_node": "wd:Q1472062",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30040/social media sharing/1",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30041/social media sharing/2",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30042/social media sharing/3",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10020/appliance-generic"
+                },
+                {
+                    "@id": "resin:Participants/30043/social media sharing/4",
+                    "roleName": "A1_ppt_topic_message",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30044/social media sharing/5",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10012/location-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20028/looting",
+            "name": "looting",
+            "description": "General looting occurs at the riot event.",
+            "wd_label": "looting",
+            "wd_node": "wd:Q192623",
+            "wd_description": "indiscriminate taking of goods by force",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30045/looting/1",
+                    "roleName": "A0_pag_looter",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30046/looting/2",
+                    "roleName": "A1_ppt_ill-gotten_goods",
+                    "entity": "resin:Entities/10020/appliance-generic"
+                },
+                {
+                    "@id": "resin:Participants/30047/looting/3",
+                    "roleName": "A2_dir_source",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30048/looting/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20029/arson",
+            "name": "arson",
+            "description": "Arson is committed at the riot event.",
+            "wd_node": "wd:Q327541",
+            "wd_label": "arson",
+            "wd_description": "crime of willfully and maliciously setting fire to property",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30049/arson/1",
+                    "roleName": "A0_pag__fire_setter",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30050/arson/2",
+                    "roleName": "A1_ppt__property_burned",
+                    "entity": "resin:Entities/10007/building-generic"
+                },
+                {
+                    "@id": "resin:Participants/30051/arson/3",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10020/appliance-generic"
+                },
+                {
+                    "@id": "resin:Participants/30052/arson/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20030/physical_conflict",
+            "name": "physical conflict",
+            "description": "The riot escalates to a physical altercation between rioters and the general public or police.",
+            "wd_label": "close_combat",
+            "wd_node": "wd:Q15041854",
+            "wd_description": "violent physical confrontation between two or more opponents at short range",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30053/physical conflict/1",
+                    "roleName": "A0_pag_first_fighter",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30054/physical conflict/2",
+                    "roleName": "A1_com_second_fighter",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30055/physical conflict/3",
+                    "roleName": "A2_ppt_spoils",
+                    "entity": "resin:Entities/10019/riot-reason"
+                },
+                {
+                    "@id": "resin:Participants/30056/physical conflict/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20031/taunting",
+            "name": "taunting",
+            "description": "Rioters taunt the general public or police.",
+            "wd_label": "threat",
+            "wd_node": "wd:Q98463540",
+            "wd_description": "condition that is appraised as a danger to one's self or well-being or to a group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30057/taunting/1",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30058/taunting/2",
+                    "roleName": "A1_ppt_threat",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30059/taunting/3",
+                    "roleName": "A2_gol_'benefactive'",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30060/taunting/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20032/harassment",
+            "name": "harassment",
+            "description": "Harrasment occurs at the riot event.",
+            "wd_label": "harassment",
+            "wd_node": "wd:Q3240539",
+            "wd_description": "wide range of behaviours of an offensive nature, commonly understood as behavior that demeans, humiliates or embarrasses a person, and it is characteristically identified by its unlikelihood in terms of social and moral reasonableness",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30061/harassment/1",
+                    "roleName": "A0_pag_botherer",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30062/harassment/2",
+                    "roleName": "A1_ppt_harassed",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30063/harassment/3",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30064/harassment/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20033/property_damage",
+            "name": "property damage",
+            "description": "Property is damaged as a result of the riot.",
+            "wd_node": "wd:Q554774",
+            "wd_label": "property damage",
+            "wd_description": "natural or intentional damage or destruction of public or private property",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30065/property damage/1",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30066/property damage/2",
+                    "roleName": "A1_ppt_entity_damaged",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30067/property damage/3",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30068/property damage/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20034/trespassing",
+            "name": "trespassing",
+            "description": "During the riot, public property is trespassed on.",
+            "wd_label": "trespass",
+            "wd_node": "wd:Q3153728",
+            "wd_description": "legal concept",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30069/trespassing/1",
+                    "roleName": "A0_pag_trespasser",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30070/trespassing/2",
+                    "roleName": "A1_ppt_entity_trespassed_on",
+                    "entity": "resin:Entities/10007/building-generic"
+                },
+                {
+                    "@id": "resin:Participants/30071/trespassing/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20035/vigilantism",
+            "name": "vigilantism",
+            "description": "The general public takes justice upon itself.",
+            "wd_node": "wd:Q914841",
+            "wd_label": "frontier_justice",
+            "wd_description": "extrajudicial punishment",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30072/vigilantism/1",
+                    "roleName": "A0_pag_punisher",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30073/vigilantism/2",
+                    "roleName": "A1_ppt_punished",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30074/vigilantism/3",
+                    "roleName": "A2_cau_punished",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30075/vigilantism/4",
+                    "roleName": "A3_mnr_mention_of_punishment_itself",
+                    "entity": "resin:Entities/10022/public-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30076/vigilantism/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20036/copycat_violence",
+            "name": "copycat violence",
+            "description": "Violence is mimicked by the general public.",
+            "wd_node": "wd:Q124490",
+            "wd_label": "violence",
+            "wd_description": "use of physical force or power with the intent to inflict harm",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30077/copycat violence/1",
+                    "roleName": "A0_pag_agent_of_violent_behavior",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30078/copycat violence/2",
+                    "roleName": "A1_ppt_non-agentive_thing/action_characterized_by_violence",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30079/copycat violence/3",
+                    "roleName": "A2_gol_target_of_violent_behavior",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30080/copycat violence/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20037/containment_measures",
+            "name": "containment measures",
+            "description": "Methods to contain the riot are employed.",
+            "wd_label": "conflict_resolution",
+            "wd_node": "wd:Q1194317",
+            "wd_description": "methods and processes involved in facilitating the peaceful ending of conflict and retribution",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20038/clash",
+                "resin:Events/20039/rioters_disperse",
+                "resin:Events/20055/investigations",
+                "resin:Events/20056/curfew",
+                "resin:Events/20057/evacuations",
+                "resin:Events/20058/arrests"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30081/containment measures/1",
+                    "roleName": "A0_pag_accommodator",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30082/containment measures/2",
+                    "roleName": "A1_ppt_theme",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30083/containment measures/3",
+                    "roleName": "A2_gol_reconciled_to/with",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30084/containment measures/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20038/clash",
+            "name": "clash",
+            "description": "There is a conflict between the police and rioters.",
+            "wd_node": "wd:Q180684",
+            "wd_label": "conflict",
+            "wd_description": "friction, disagreement, or discord within a group or between different groups",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20039/rioters_disperse",
+                "resin:Events/20040/police_attack_rioters",
+                "resin:Events/20041/rioters_attack_police"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30085/clash/1",
+                    "roleName": "A0_pag_agentive_clasher",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30086/clash/2",
+                    "roleName": "A1_com_entity_clashed_with",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30087/clash/3",
+                    "roleName": "A2_ppt_entity_clashed_over",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30088/clash/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20039/rioters_disperse",
+            "name": "rioters disperse",
+            "description": "Members of the riot disperse.",
+            "wd_label": "dispersion",
+            "wd_node": "wd:Q178697",
+            "wd_description": "system in which components are dispersed in a continuous phase of different composition, where at least one of the phases consists of finely divided phase domains",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30089/rioters disperse/1",
+                    "roleName": "A0_pag_scatterer",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30090/rioters disperse/2",
+                    "roleName": "A1_ppt",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30091/rioters disperse/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20040/police_attack_rioters",
+            "name": "police attack rioters",
+            "description": "There is an attack on the rioters from the police.",
+            "wd_node": "wd:Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20042/injury_of_rioters",
+                "resin:Events/20043/injury_of_police",
+                "resin:Events/20046/injury_of_bystanders"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30092/police attack rioters/1",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30093/police attack rioters/2",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30094/police attack rioters/3",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10023/police-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30095/police attack rioters/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20041/rioters_attack_police",
+            "name": "rioters attack police",
+            "description": "There is an attack on the police from the rioters.",
+            "wd_node": "wd:Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20042/injury_of_rioters",
+                "resin:Events/20043/injury_of_police",
+                "resin:Events/20046/injury_of_bystanders"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30096/rioters attack police/1",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30097/rioters attack police/2",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30098/rioters attack police/3",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30099/rioters attack police/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20042/injury_of_rioters",
+            "name": "injury of rioters",
+            "description": "One or more of the rioters is injured.",
+            "wd_label": "injury",
+            "wd_node": "wd:Q193078",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20044/death_of_rioters"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30100/injury of rioters/1",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30101/injury of rioters/2",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30102/injury of rioters/3",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/10023/police-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30103/injury of rioters/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20043/injury_of_police",
+            "name": "injury of police",
+            "description": "One or more of the police is injured.",
+            "wd_label": "injury",
+            "wd_node": "wd:Q193078",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20045/death_of_police"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30104/injury of police/1",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30105/injury of police/2",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30106/injury of police/3",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/10023/police-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30107/injury of police/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10003/riot-group"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20044/death_of_rioters",
+            "name": "death of rioters",
+            "description": "One or more of the rioters dies.",
+            "wd_node": "wd:Q74948922",
+            "wd_label": "violent_death",
+            "wd_description": "death caused by violence",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30108/death of rioter/1",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30109/death of rioter/2",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30110/death of rioter/3",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/10023/police-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30111/death of rioter/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20045/death_of_police",
+            "name": "death of police",
+            "description": "One or more of the police dies.",
+            "wd_node": "wd:Q74948922",
+            "wd_label": "violent_death",
+            "wd_description": "death caused by violence",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30112/death of police/1",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30113/death of police/2",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30114/death of police/3",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30115/death of police/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20046/injury_of_bystanders",
+            "name": "injury of bystanders",
+            "description": "There is injury sustained by bystanders.",
+            "wd_label": "injury",
+            "wd_node": "wd:Q193078",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20047/death_of_bystanders"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30116/injury of bystanders/1",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30117/injury of bystanders/2",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30118/injury of bystanders/3",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30119/injury of bystanders/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20047/death_of_bystanders",
+            "name": "death of bystanders",
+            "description": "One or more of the bystanders to the riot dies.",
+            "wd_node": "wd:Q74948922",
+            "wd_label": "violent_death",
+            "wd_description": "death caused by violence",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30120/death of bystanders/1",
+                    "roleName": "A0_pag_agent_killer",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30121/death of bystanders/2",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30122/death of bystanders/3",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30123/death of bystanders/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20048/public_warning",
+            "name": "public warning",
+            "description": "The media issues a general warning to the public about the riot.",
+            "wd_label": "broadcasting",
+            "wd_node": "wd:Q15078788",
+            "wd_description": "distribution of audio and video content to a dispersed audience via any audio or visual mass communications medium",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30124/public warning/1",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30125/public warning/2",
+                    "roleName": "A1_ppt_message",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30126/public warning/3",
+                    "roleName": "A2_gol_audience",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30127/public warning/4",
+                    "roleName": "A3_dir_source",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30128/public warning/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20049/propagate_propaganda",
+            "name": "Propaganda",
+            "description": "Misinformation is spread by the media.",
+            "wd_node": "wd:Q7281",
+            "wd_label": "propaganda",
+            "wd_description": "material created to influence or persuade",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30129/propagate propagand/1",
+                    "roleName": "A0_pag_campaigner",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30130/propagate propagand/2",
+                    "roleName": "A1_ppt_cause",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30131/propagate propagand/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20050/business_closure",
+            "name": "business closure",
+            "description": "Buisnesses respond to the riot by closing their operations.",
+            "wd_node": "wd:Q5135520",
+            "wd_label": "closure",
+            "wd_description": "actions taken when it is no longer necessary or possible for a business or other organization to continue to operate",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30132/business closure/1",
+                    "roleName": "A0_pag_person_doing_the_closing",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30133/business closure/2",
+                    "roleName": "A1_ppt_thing_closing",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30134/business closure/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20051/reduce_services",
+            "name": "reduce services",
+            "description": "The riot results in a reduction of services.",
+            "wd_node": "wd:Q47496130",
+            "wd_label": "reduction ",
+            "wd_description": "decrease in a quantity",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30135/reduce services/1",
+                    "roleName": "A0_pag_causer_of_decline",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30136/reduce services/2",
+                    "roleName": "A1_ppt_thing_decreasing",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30137/reduce services/6",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20052/shutdown",
+            "name": "shutdown",
+            "description": "The riot shuts down a given system.",
+            "wd_label": "shutdown_procedure",
+            "wd_node": "wd:Q68133333",
+            "wd_description": "procedure of shutting down a running system",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30138/shutdown/1",
+                    "roleName": "A0_pag_Intentional_agent",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30139/shutdown/2",
+                    "roleName": "A1_ppt_Thing_ending",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30140/shutdown/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20053/public_statement",
+            "name": "public statement",
+            "description": "Police make a public statement about the riot.",
+            "wd_node": "wd:Q52947181",
+            "wd_label": "public_statement",
+            "wd_description": "statement made for a public audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30141/public statement/1",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30142/public statement/2",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30143/public statement/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                },
+                {
+                    "@id": "resin:Participants/30144/public statement/4",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30145/public statement/5",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10024/media-company"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20054/resignation",
+            "name": "resignation",
+            "description": "A politician resigns from office due to the riot.",
+            "wd_node": "wd:Q796919",
+            "wd_label": "resignation",
+            "wd_description": "act of giving up or quitting an office or position",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30146/resignation/1",
+                    "roleName": "A0_pag_agent_quitter",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30147/resignation/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20055/investigations",
+            "name": "investigations",
+            "description": "Investigations are launched into the riot.",
+            "wd_node": "wd:Q1964968",
+            "wd_label": "criminal_investigation",
+            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30148/investigations/1",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30149/investigations/2",
+                    "roleName": "A1_ppt_examined",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30150/investigations/3",
+                    "roleName": "A2_ppt_examined_for",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30151/investigations/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20056/curfew",
+            "name": "curfew",
+            "description": "A curfew is imposed in response to the riot.",
+            "wd_label": "curfew",
+            "wd_node": "wd:Q223625",
+            "wd_description": "ban on entering public areas such as streets or squares at certain times",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30152/curfew/1",
+                    "roleName": "A0_pag_lawgiver",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30153/curfew/2",
+                    "roleName": "A1_ppt_activity/place/item_not_allowed",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30154/curfew/3",
+                    "roleName": "A2_gol_secondary_agent",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30155/curfew/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20057/evacuations",
+            "name": "evacuations",
+            "description": "Local evacuations are ordered in response to the riot.",
+            "wd_node": "wd:Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30156/evacuations/1",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30157/evacuations/2",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30158/evacuations/4",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "resin:Entities/10006/riot-location"
+                },
+                {
+                    "@id": "resin:Participants/30159/evacuations/5",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/10012/location-generic"
+                },
+                {
+                    "@id": "resin:Participants/30160/evacuations/6",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20058/arrests",
+            "name": "arrests",
+            "description": "Arrests are made in response to the riot.",
+            "wd_node": "wd:Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30161/arrests/1",
+                    "roleName": "A0_pag__police",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30162/arrests/2",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30163/arrests/3",
+                    "roleName": "A2_cau__crime",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30164/arrests/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20059/investigations",
+            "name": "investigations",
+            "description": "Investigations are launched into the riot.",
+            "wd_node": "wd:Q1964968",
+            "wd_label": "criminal_investigation",
+            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20060/arrests"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30165/investigations/1",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30166/investigations/2",
+                    "roleName": "A1_ppt_examined",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30167/investigations/3",
+                    "roleName": "A2_ppt_examined_for",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30168/investigations/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20060/arrests",
+            "name": "arrests",
+            "description": "Arrests are made in response to the riot.",
+            "wd_node": "wd:Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30169/arrests/1",
+                    "roleName": "A0_pag__police",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30170/arrests/2",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30171/arrests/3",
+                    "roleName": "A2_cau__crime",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30172/arrests/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20061/curfew",
+            "name": "curfew",
+            "description": "A curfew is imposed in response to the riot.",
+            "wd_label": "curfew",
+            "wd_node": "wd:Q223625",
+            "wd_description": "ban on entering public areas such as streets or squares at certain times",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30173/curfew/1",
+                    "roleName": "A0_pag_lawgiver",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30174/curfew/2",
+                    "roleName": "A1_ppt_activity/place/item_not_allowed",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30175/curfew/3",
+                    "roleName": "A2_gol_secondary_agent",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30176/curfew/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20062/policy_change",
+            "name": "policy change",
+            "description": "Policy changes are made in response to the riot.",
+            "wd_label": "reform",
+            "wd_node": "wd:Q900406",
+            "wd_description": "large improvement of what is wrong, corrupt, unsatisfactory",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30177/policy change/1",
+                    "roleName": "A0_pag_reformer",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30178/policy change/2",
+                    "roleName": "A1_ppt_thing_changed",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30179/policy change/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20063/public_statement",
+            "name": "public statement",
+            "description": "a politician speaks about the riot.",
+            "wd_node": "wd:Q52947181",
+            "wd_label": "public_statement",
+            "wd_description": "statement made for a public audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30180/public statement/1",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30181/public statement/2",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30182/public statement/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                },
+                {
+                    "@id": "resin:Participants/30183/public statement/4",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30184/public statement/5",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10024/media-company"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20064/election",
+            "name": "election",
+            "description": "An election is held in response to the riot subject matter.",
+            "wd_node": "wd:Q40231",
+            "wd_label": "election",
+            "wd_description": "process by which a population chooses an individual to hold public office or some other position, such as in an organization or society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30185/election/1",
+                    "roleName": "A0_pag_agent_voters",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30186/election/2",
+                    "roleName": "A1_ppt_theme_candidate",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30187/election/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20065/resignation",
+            "name": "resignation",
+            "description": "A politician resigns from office due to the riot.",
+            "wd_node": "wd:Q796919",
+            "wd_label": "resignation",
+            "wd_description": "act of giving up or quitting an office or position",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30188/resignation/1",
+                    "roleName": "A0_pag_agent_quitter",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30189/resignation/3",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20066/public_petitions",
+            "name": "public petitions",
+            "description": "The general public petitions for a ballot initiative.",
+            "wd_node": "wd:Q660064",
+            "wd_label": "ballot_initiative",
+            "wd_description": "means by which a petition signed by a certain minimum number of registered voters can force a public vote",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30190/public petitions/1",
+                    "roleName": "A0_pag_self-motivated_entity",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30191/public petitions/2",
+                    "roleName": "A1_ppt_doing_what",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30192/public petitions/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20067/society_reconstruction",
+            "name": "society reconstruction",
+            "description": "Revolution sparks a reconstruction of society.",
+            "wd_node": "wd:Q2478058",
+            "wd_label": "reconstruction",
+            "wd_description": "rebuilding or reassembling of a destroyed infrastructure",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30193/society reconstruction/1",
+                    "roleName": "A0_pag_rebuilder",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30194/society reconstruction/2",
+                    "roleName": "A1_ppt_former_ruins",
+                    "entity": "resin:Entities/10007/building-generic"
+                },
+                {
+                    "@id": "resin:Participants/30195/society reconstruction/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20068/journalism",
+            "name": "journalism",
+            "description": "Events of the riot are documented by journalists.",
+            "wd_label": "journalism",
+            "wd_node": "wd:Q11030",
+            "wd_description": "investigation and reporting of events, issues and trends to a broad audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30196/journalism/1",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30197/journalism/2",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30198/journalism/3",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30199/journalism/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20069/propaganda",
+            "name": "Propaganda",
+            "description": "Misinformation is spread by the media.",
+            "wd_label": "propaganda",
+            "wd_node": "wd:Q7281",
+            "wd_description": "form of communication intended to sway the audience through presenting only one side of the argument",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30200/propaganda/1",
+                    "roleName": "A0_pag_campaigner",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30201/propaganda/2",
+                    "roleName": "A1_ppt_cause",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30202/propaganda/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20070/notify_public",
+            "name": "notify public",
+            "description": "The media notifies the public of the riot.",
+            "wd_label": "broadcasting",
+            "wd_node": "wd:Q15078788",
+            "wd_description": "distribution of audio and video content to a dispersed audience via any audio or visual mass communications medium",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30203/notify public/1",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30204/notify public/2",
+                    "roleName": "A1_ppt_message",
+                    "entity": "resin:Entities/10019/riot-reason"
+                },
+                {
+                    "@id": "resin:Participants/30205/notify public/3",
+                    "roleName": "A2_gol_audience",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30206/notify public/4",
+                    "roleName": "A3_dir_source",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30207/notify public/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20071/reopening",
+            "name": "reopening",
+            "description": "Buisnesses open after the riot.",
+            "wd_label": "reopening",
+            "wd_node": "wd:Q16571590",
+            "wd_description": "new opening, usually for a cultural or commercial establishment",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30208/reopening/1",
+                    "roleName": "A0_pag_opener",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30209/reopening/2",
+                    "roleName": "A1_ppt_thing_opening",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30210/reopening/3",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30211/reopening/4",
+                    "roleName": "A3_gol_benefactive",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30212/reopening/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20072/augment_services",
+            "name": "augment services",
+            "description": "Services are increased after the riot.",
+            "wd_label": "increase",
+            "wd_node": "wd:Q9073584",
+            "wd_description": "enlargement or increase of an entity; increase in size, number, value, or strength; an amount by which a quantity is increased",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30213/augment services/1",
+                    "roleName": "A0_pag_causer_of_increase",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30214/augment services/2",
+                    "roleName": "A1_ppt_thing_increasing",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30215/augment services/6",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20073/travel_alert",
+            "name": "travel alert",
+            "description": "There is a travel alert for the riot.",
+            "wd_label": "broadcasting",
+            "wd_node": "wd:Q15078788",
+            "wd_description": "distribution of audio and video content to a dispersed audience via any audio or visual mass communications medium",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30216/travel alert/1",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "resin:Entities/10025/foreign-gov"
+                },
+                {
+                    "@id": "resin:Participants/30217/travel alert/2",
+                    "roleName": "A1_ppt_message",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                },
+                {
+                    "@id": "resin:Participants/30218/travel alert/3",
+                    "roleName": "A2_gol_audience",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30219/travel alert/4",
+                    "roleName": "A3_dir_source",
+                    "entity": "resin:Entities/10025/foreign-gov"
+                },
+                {
+                    "@id": "resin:Participants/30220/travel alert/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/foreign-country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20074/express_support",
+            "name": "express support",
+            "description": "A foreign government expresses support for the riot.",
+            "wd_label": "patronage",
+            "wd_node": "wd:Q265939",
+            "wd_description": "support that one organization or individual bestows to another",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30221/express support/1",
+                    "roleName": "A0_pag_patron",
+                    "entity": "resin:Entities/10025/foreign-gov"
+                },
+                {
+                    "@id": "resin:Participants/30222/express support/2",
+                    "roleName": "A1_ppt_entity_patronized",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30223/express support/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/foreign-country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20075/condemn_actions",
+            "name": "condemn actions",
+            "description": "A foreign government condemns the actions of a riot group.",
+            "wd_label": "denunciation",
+            "wd_node": "wd:Q1189956",
+            "wd_description": "accusation or complaint against a person or group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30224/condemn actions/1",
+                    "roleName": "A0_pag_speaker",
+                    "entity": "resin:Entities/10025/foreign-gov"
+                },
+                {
+                    "@id": "resin:Participants/30225/condemn actions/2",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30226/condemn actions/3",
+                    "roleName": "A2_prd_grounds",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30227/condemn actions/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/foreign-country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20076/international_petitions",
+            "name": "international petitions",
+            "description": "Petitions are circulated internationally to support the riot.",
+            "wd_node": "wd:Q660064",
+            "wd_label": "ballot_initiative",
+            "wd_description": "means by which a petition signed by a certain minimum number of registered voters can force a public vote",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30228/international petitions/1",
+                    "roleName": "A0_pag_self-motivated_entity",
+                    "entity": "resin:Entities/10008/state1"
+                },
+                {
+                    "@id": "resin:Participants/30229/international petitions/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10026/foreign-country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20077/contact_attorney",
+            "name": "contact attorney",
+            "description": "An attorney is contacted to represent a riot group.",
+            "wd_node": "wd:Q11024",
+            "wd_label": "communication",
+            "wd_description": "act of conveying intended meanings from one entity or group to another through the use of mutually understood signs and rules",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20078/file_complaint"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30230/contact attorney/1",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/10017/victim-generic"
+                },
+                {
+                    "@id": "resin:Participants/30231/contact attorney/2",
+                    "roleName": "A2_com_co_agent_other_communicators",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30232/contact attorney/3",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30233/contact attorney/4",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20078/file_complaint",
+            "name": "file complaint",
+            "description": "A complaint is filed against a riot group.",
+            "wd_node": "wd:Q836925",
+            "wd_label": "complaint",
+            "wd_description": "Legal document, the filing of which initiates a lawsuit",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20079/answer_complaint"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30234/file complaint/1",
+                    "roleName": "A0_pag_complainer",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30235/file complaint/2",
+                    "roleName": "A1_ppt_cause",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30236/file complaint/3",
+                    "roleName": "A2_gol_hearer",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30237/file complaint/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20079/answer_complaint",
+            "name": "answer complaint",
+            "description": "The police answer a complaint against a riot group.",
+            "wd_node": "wd:Q33622550",
+            "wd_label": "answer",
+            "wd_description": "in law a solemn assertion in opposition to someone or something",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20080/discovery"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30238/answer complaint/1",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/10004/person-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20080/discovery",
+            "name": "discovery",
+            "description": "The prosecuter and defendant exchange information about the riot.",
+            "wd_label": "research",
+            "wd_node": "wd:Q42240",
+            "wd_description": "systematic study undertaken to increase knowledge",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20081/motion"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30239/discovery/1",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30240/discovery/2",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/10004/person-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20081/motion",
+            "name": "motion",
+            "description": "A motion is passed to dismiss the case.",
+            "wd_node": "wd:Q6917734",
+            "wd_label": "motion",
+            "wd_description": "in US law, a procedural device to bring a limited, contested issue before a court for decision",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20082/motionOutlinks"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30241/motion/1",
+                    "roleName": "A0_pag_mover",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30242/motion/3",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20082/motionOutlinks",
+            "description": "outlink XOR gate",
+            "name": "Motion outlinks",
+            "comment": "container node",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "xor",
+            "children": [
+                "resin:Events/20083/mediation",
+                "resin:Events/20085/trial"
+            ],
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20083/mediation",
+            "name": "mediation",
+            "description": "The prosecuter and plaintiff attempt to settle the case.",
+            "wd_node": "wd:Q223871",
+            "wd_label": "mediation",
+            "wd_description": "dispute resolution with assistance of an impartial third party moderator through the use of communication and negotiation techniques",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20084/settlement"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30243/mediation/1",
+                    "roleName": "A0_pag_prosecutor_plaintif",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30244/mediation/2",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30245/mediation/3",
+                    "roleName": "A0-pag_X_judge",
+                    "entity": "resin:Entities/10005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20084/settlement",
+            "name": "settlement",
+            "description": "A settlement is reached between the prosecuter and defendant.",
+            "wd_label": "settlement",
+            "wd_node": "wd:Q167412",
+            "wd_description": "resolution between disputing parties about a legal case",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30246/settlement/1",
+                    "roleName": "A0_pag_entity_making_resolution",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30247/settlement/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20085/trial",
+            "name": "trial",
+            "description": "A trial regarding the riot is held.",
+            "wd_node": "wd:Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20086/judgement"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30248/trial/1",
+                    "roleName": "A0_pag__litigant",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30249/trial/2",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30250/trial/3",
+                    "roleName": "A2_gol__adjudicator",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30251/trial/4",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30252/trial/5",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20086/judgement",
+            "name": "judgement",
+            "description": "A court judges the case.",
+            "wd_node": "wd:Q3769186",
+            "wd_label": "judgement",
+            "wd_description": "the formal decision made by a court following a lawsuit",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20087/appeal"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30253/judgement/1",
+                    "roleName": "A0_pag_judge",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30254/judgement/2",
+                    "roleName": "A1_ppt_judged",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30255/judgement/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20087/appeal",
+            "name": "appeal",
+            "description": "There is an appeal made to a higher court.",
+            "wd_node": "wd:Q329777",
+            "wd_label": "appeal",
+            "wd_description": "resort to a superior court to review the decision of an inferior court or administrative agency",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30256/appeal/1",
+                    "roleName": "A0_pag_appealer",
+                    "entity": "resin:Entities/10004/person-generic"
+                },
+                {
+                    "@id": "resin:Participants/30257/appeal/3",
+                    "roleName": "A2_gol_appealed_to",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30258/appeal/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20088/shutdown",
+            "name": "shutdown",
+            "description": "The government shuts down.",
+            "wd_label": "shutdown_procedure",
+            "wd_node": "wd:Q68133333",
+            "wd_description": "procedure of shutting down a running system",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30259/shutdown/1",
+                    "roleName": "A0_pag_Intentional_agent",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30260/shutdown/5",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20089/condemnation",
+            "name": "condemnation",
+            "description": "The riot group condemns the government.",
+            "wd_label": "denunciation",
+            "wd_node": "wd:Q1189956",
+            "wd_description": "accusation or complaint against a person or group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30261/condemnation/1",
+                    "roleName": "A0_pag_speaker",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30262/condemnation/2",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30263/condemnation/3",
+                    "roleName": "A2_prd_grounds",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30264/condemnation/4",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10015/country"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20090/Reporting",
+            "name": "Reporting",
+            "description": "Riot event is reported on media outlets",
+            "wd_node": "wd:Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30265/media",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30266/reported",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "resin:Entities/10003/riot-group"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20091/Use",
+            "name": "Use",
+            "description": "Rioter uses a weapon",
+            "wd_node": "wd:Q1724915",
+            "wd_label": "use",
+            "wd_description": "use of a resource to perform a task",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30267/user",
+                    "roleName": "A0_pag_User",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30268/weapon",
+                    "roleName": "A1_ppt_thing_used",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20092/Killing",
+            "name": "Killing",
+            "description": "Someone is killed by a rioter",
+            "wd_node": "wd:Q844482",
+            "wd_label": "killing",
+            "wd_description": "act of killing a living being",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30269/killer",
+                    "roleName": "A0_pag_killer",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30270/corpse",
+                    "roleName": "A1_ppt_corpse",
+                    "entity": "resin:Entities/10005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20093/Taking_office",
+            "name": "Taking office",
+            "description": "Official is elected",
+            "wd_node": "wd:Q28530236",
+            "wd_label": "taking_office",
+            "wd_description": "procedure, event start work in the post",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30271/agent",
+                    "roleName": "A0_pag_Agent",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30272/result",
+                    "roleName": "A1_ppt_Theme",
+                    "entity": "resin:Entities/10016/electoral-result"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20094/Social_inclusion",
+            "name": "Social inclusion",
+            "description": "Rioters are stigmatized",
+            "wd_node": "wd:Q3149923",
+            "wd_label": "social inclusion",
+            "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30273/theme",
+                    "roleName": "A1_ppt_theme",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30274/group",
+                    "roleName": "A2_gol_group",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20095/Involvement",
+            "name": "Involvement",
+            "description": "Rioters are involved in riot",
+            "wd_node": "wd:Q36949023",
+            "wd_label": "involvement",
+            "wd_description": "state of being involved (e.g. in a process or event)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30275/cause",
+                    "roleName": "A0_pag_causer_of_inclusion",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30276/public",
+                    "roleName": "A2_ppt_group",
+                    "entity": "resin:Entities/10005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20096/Leadership",
+            "name": "Leadership",
+            "description": "leadership takes charge",
+            "wd_node": "wd:Q484275",
+            "wd_label": "leadership",
+            "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30277/leader",
+                    "roleName": "A0_pag_leader",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30278/public",
+                    "roleName": "A1_ppt_entity_lead",
+                    "entity": "resin:Entities/10005/general-public"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20097/Work",
+            "name": "Work",
+            "description": "Rioters rebel at work",
+            "wd_node": "wd:Q6958747",
+            "wd_label": "work",
+            "wd_description": "activities performed as a means of support",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30279/worker",
+                    "roleName": "A0_pag_worker",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20098/support",
+            "name": "support",
+            "description": "External governments get involved",
+            "wd_node": "wd:Q1643184",
+            "wd_label": "help",
+            "wd_description": "cooperation between living beings",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30280/support",
+                    "roleName": "A0_pag_helper",
+                    "entity": "resin:Entities/10025/foreign-gov"
+                },
+                {
+                    "@id": "resin:Participants/30281/rioter",
+                    "roleName": "A1_ppt_person",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20099/Amenity",
+            "name": "Amenity",
+            "description": "Government provides an amenity",
+            "wd_node": "wd:Q867393",
+            "wd_label": "amenity",
+            "wd_description": "infrastructure available for use and improving quality of life",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30282/provider",
+                    "roleName": "A0_pag_provider",
+                    "entity": "resin:Entities/10010/government"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20100/Succession",
+            "name": "Succession",
+            "description": "Position of power is inherited",
+            "wd_node": "wd:Q200303",
+            "wd_label": "inheritance",
+            "wd_description": "practice of passing on property upon the death of individuals",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30283/thing_following",
+                    "roleName": "A1_ppt_thing_following",
+                    "entity": "resin:Entities/10010/government"
+                },
+                {
+                    "@id": "resin:Participants/30284/followed",
+                    "roleName": "A2_ppt_thing_followed",
+                    "entity": "resin:Entities/10014/politician"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20101/Riot",
+            "name": "Riot",
+            "description": "Riot ensues",
+            "wd_node": "wd:Q124757",
+            "wd_label": "riot",
+            "wd_description": "violent public disturbance against authority, property or people",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30285/rioter",
+                    "roleName": "A0_pag__rioter",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30286/cause",
+                    "roleName": "A1_cau__who/what_the_riot_is_against",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20102/Walking",
+            "name": "Walking",
+            "description": "A march is organized in protest",
+            "wd_node": "wd:Q6537379",
+            "wd_label": "walking",
+            "wd_description": "one of the main gaits of locomotion among legged animals, typically slower than running and other gaits; characterized by a 'vaulting' movement of the body over the legs, frequently described as an inverted pendulum",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30287/walker",
+                    "roleName": "A0_pag_walker",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30288/path",
+                    "roleName": "A2_loc_path/_underspecified_location_walked",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20103/throwing",
+            "name": "throwing",
+            "description": "Something is thrown by the rioters at police",
+            "wd_node": "wd:Q12898216",
+            "wd_label": "throwing",
+            "wd_description": "launching of a ballistic projectile by hand",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30289/thrower",
+                    "roleName": "A0_pag_thrower",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30290/thrown",
+                    "roleName": "A1_ppt_thing_thrown",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                },
+                {
+                    "@id": "resin:Participants/30291/targer",
+                    "roleName": "A2_gol_thrown_at",
+                    "entity": "resin:Entities/10001/police"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20104/Knife_fight",
+            "name": "Knife fight",
+            "description": "A fight breaks out which involves knives",
+            "wd_node": "wd:Q2235801",
+            "wd_label": "knife fight",
+            "wd_description": "violent physical confrontation involving knives",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30292/figher",
+                    "roleName": "A0_pag_fighter",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30293/weapon",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "resin:Entities/10021/riot-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20105/Loss",
+            "name": "Loss",
+            "description": "One or more businesses loses property",
+            "wd_node": "wd:Q3030513",
+            "wd_label": "disappearance",
+            "wd_description": "action of disappearing or vanishing",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30294/loser",
+                    "roleName": "A0_pag_entity_losing_something",
+                    "entity": "resin:Entities/10002/business"
+                },
+                {
+                    "@id": "resin:Participants/30295/property",
+                    "roleName": "A1_ppt_thing_lost",
+                    "entity": "resin:Entities/10007/building-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20106/Announcement",
+            "name": "Announcement",
+            "description": "An announcement is made regarding a political election",
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30296/announcer",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/10024/media-company"
+                },
+                {
+                    "@id": "resin:Participants/30297/results",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/10016/electoral-result"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20107/gathering",
+            "name": "gathering",
+            "description": "People gather",
+            "wd_node": "wd:Q108634029",
+            "wd_label": "gathering",
+            "wd_description": "act of bringing items together",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30298/Entities/00000/rioter",
+                    "roleName": "A0_pag_agent_or_causer",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30299/group",
+                    "roleName": "A1_ppt_entity_gathered",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30300/loc",
+                    "roleName": "A2_gol_gathered_into",
+                    "entity": "resin:Entities/10006/riot-location"
+                },
+                {
+                    "@id": "resin:Participants/30301/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20108/reception",
+            "name": "reception",
+            "description": "Civil justice is received",
+            "wd_node": "wd:Q76664785",
+            "wd_label": "getting",
+            "wd_description": "to get something or someone, to receive something or someone",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30302/receiver",
+                    "roleName": "A0_pag_receiver",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30303/law",
+                    "roleName": "A1_ppt_thing_gotten",
+                    "entity": "resin:Entities/10018/law-generic"
+                },
+                {
+                    "@id": "resin:Participants/30304/source",
+                    "roleName": "A2_dir_source",
+                    "entity": "resin:Entities/10013/court-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20109/Accusation",
+            "name": "Accusation",
+            "description": "The police are accused of brutality",
+            "wd_node": "wd:Q19357312",
+            "wd_label": "accusation",
+            "wd_description": "act of accusing or charging another with a crime or transgression",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30305/accuser",
+                    "roleName": "A0_pag_agent_accuser",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30306/police",
+                    "roleName": "A1_ppt_theme_accused",
+                    "entity": "resin:Entities/10001/police"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20110/control",
+            "name": "control",
+            "description": "police take control of the riot",
+            "wd_node": "wd:Q29017603",
+            "wd_label": "control",
+            "wd_description": "complete authority over something; ability to fully direct the operation of a device, system, or process",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30307/police",
+                    "roleName": "A0_pag_controller",
+                    "entity": "resin:Entities/10001/police"
+                },
+                {
+                    "@id": "resin:Participants/30308/controlled",
+                    "roleName": "A1_ppt_controlled",
+                    "entity": "resin:Entities/10003/riot-group"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20111/Public_speaking",
+            "name": "Public speaking",
+            "description": "politicians make a public address",
+            "wd_node": "wd:Q18342738",
+            "wd_label": "public_speaking",
+            "wd_description": "process and act of speaking or giving a lecture to a group of people in a structured, deliberate manner intended to inform, influence, or entertain a listening audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30309/politician",
+                    "roleName": "A0_pag_talker",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30310/topic",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "resin:Entities/10011/ideology-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20112/change",
+            "name": "change",
+            "description": "Change is enacted by the courts",
+            "wd_node": "wd:Q1150070",
+            "wd_label": "change",
+            "wd_description": "process, event or action that deviates from the present state",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30311/causer",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "resin:Entities/10013/court-generic"
+                },
+                {
+                    "@id": "resin:Participants/30312/law",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "resin:Entities/10018/law-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20113/collateral_damage",
+            "name": "collateral damage",
+            "description": "Damage is caused to bystanders of the riot",
+            "wd_node": "wd:Q45939",
+            "wd_label": "collateral damage",
+            "wd_description": "damage to things that are incidental to the intended target",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30313/damage",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/10003/riot-group"
+                },
+                {
+                    "@id": "resin:Participants/30314/damaged",
+                    "roleName": "A1_ppt_entity_damaged",
+                    "entity": "resin:Entities/10007/building-generic"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20114/planning",
+            "name": "planning",
+            "description": "location of riot is planned",
+            "wd_node": "wd:Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30315/planned",
+                    "roleName": "A1_ppt_thing_planned",
+                    "entity": "resin:Entities/10006/riot-location"
+                },
+                {
+                    "@id": "resin:Participants/30316/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20115/violent_crime",
+            "name": "violent crime",
+            "description": "violence is committed during the riot",
+            "wd_node": "wd:Q1520311",
+            "wd_label": "violent_crime",
+            "wd_description": "crime in which an offender uses or threatens force upon a victim",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30317/agent",
+                    "roleName": "A0_pag_agent",
+                    "entity": "resin:Entities/10000/rioter"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20116/organizing",
+            "name": "organizing",
+            "description": "riot event is planned",
+            "wd_node": "wd:Q25931691",
+            "wd_label": "organizing",
+            "wd_description": "term in management",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30318/planner",
+                    "roleName": "A0_pag_planner",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30319/location",
+                    "roleName": "A1_ppt_thing_organized",
+                    "entity": "resin:Entities/10006/riot-location"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20117/meeting",
+            "name": "meeting",
+            "description": "two parties involved meet",
+            "wd_node": "wd:Q2761147",
+            "wd_label": "meeting",
+            "wd_description": "event in which two or more people assemble, planned in advance to facilitate discussion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30320/party_1",
+                    "roleName": "A0_pag_one_party",
+                    "entity": "resin:Entities/10008/state1"
+                },
+                {
+                    "@id": "resin:Participants/30321/party_2",
+                    "roleName": "A1_com_other_party",
+                    "entity": "resin:Entities/10009/state2"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20118/shooting",
+            "name": "shooting",
+            "description": "a shooter attacks",
+            "wd_node": "wd:Q2252077",
+            "wd_label": "shooting",
+            "wd_description": "act or process of firing firearms or other projectile weapons",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30322/shooter",
+                    "roleName": "A0_pag_agent_shooter",
+                    "entity": "resin:Entities/10000/rioter"
+                },
+                {
+                    "@id": "resin:Participants/30323/corpse",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30324/weapon",
+                    "roleName": "A2_mnr_instrument_gun",
+                    "entity": "resin:Entities/10022/public-weapon"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20119/speech",
+            "name": "speech",
+            "description": "a politician speaks at the riot",
+            "wd_node": "wd:Q861911",
+            "wd_label": "oration",
+            "wd_description": "address delivered to an audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30325/lecturer",
+                    "roleName": "A0_pag_lecturer",
+                    "entity": "resin:Entities/10014/politician"
+                },
+                {
+                    "@id": "resin:Participants/30326/public",
+                    "roleName": "A1_gol_audience",
+                    "entity": "resin:Entities/10005/general-public"
+                },
+                {
+                    "@id": "resin:Participants/30327/utterance",
+                    "roleName": "A2_ppt_topic_or_utterance",
+                    "entity": "resin:Entities/10019/riot-reason"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

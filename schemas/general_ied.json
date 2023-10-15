@@ -1,0 +1,2302 @@
+{
+    "@id": "resin:Submissions/TA1/General_IED",
+    "sdfVersion": "3.0.0",
+    "version": "resin:Phase2b",
+    "events": [
+        {
+            "@id": "resin:Events/20000/General-IED",
+            "children": [
+                "resin:Events/20001/Steps_kairos:Container:Contributory_Factors",
+                "resin:Events/20002/Steps_kairos:Container:Planning",
+                "resin:Events/20003/Steps_kairos:Container:Execution",
+                "resin:Events/20004/Steps_kairos:Container:Response",
+                "resin:Events/20005/Steps_kairos:Container:Investigation"
+            ],
+            "children_gate": "or",
+            "description": "general IED bombing news story.",
+            "name": "General IED",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "resin:Entities/10000/",
+                    "name": "IED",
+                    "wd_label": "Improvised Explosive Device",
+                    "wd_node": "wd:Q1249453",
+                    "wd_description": "homemade bomb"
+                },
+                {
+                    "@id": "resin:Entities/10001/",
+                    "name": "crime committer",
+                    "wd_label": "human",
+                    "wd_node": "wd:Q5",
+                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+                },
+                {
+                    "@id": "resin:Entities/10002/",
+                    "name": "target location",
+                    "wd_label": "geographic region",
+                    "wd_node": "wd:Q82794",
+                    "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+                },
+                {
+                    "@id": "resin:Entities/10003/",
+                    "name": "general population",
+                    "wd_label": "human population",
+                    "wd_node": "wd:Q33829",
+                    "wd_description": "humans that live in the same locality"
+                },
+                {
+                    "@id": "resin:Entities/10004/",
+                    "name": "building facility",
+                    "wd_label": "geographic region",
+                    "wd_node": "wd:Q82794",
+                    "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+                },
+                {
+                    "@id": "resin:Entities/10005/",
+                    "name": "commander or requester",
+                    "wd_label": "participant",
+                    "wd_node": "wd:Q56512863",
+                    "wd_description": "object that takes part in an event or process"
+                },
+                {
+                    "@id": "resin:Entities/10006/",
+                    "name": "bomb attack",
+                    "wd_label": "bomb attack",
+                    "wd_node": "wd:Q891854",
+                    "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects"
+                },
+                {
+                    "@id": "resin:Entities/10007/",
+                    "name": "police",
+                    "wd_label": "police",
+                    "wd_node": "wd:Q35535",
+                    "wd_description": "constituted body of persons empowered by the state to enforce the law"
+                },
+                {
+                    "@id": "resin:Entities/10008/",
+                    "name": "victims",
+                    "wd_label": "human population",
+                    "wd_node": "wd:Q33829",
+                    "wd_description": "humans that live in the same locality"
+                },
+                {
+                    "@id": "resin:Entities/10009/",
+                    "name": "evacuation site",
+                    "wd_label": "geographic region",
+                    "wd_node": "wd:Q82794",
+                    "wd_description": "2D or 3D defined space, mainly in terrestrial and astrophysics sciences"
+                },
+                {
+                    "@id": "resin:Entities/10010/",
+                    "name": "medical staff",
+                    "wd_label": "medical staff",
+                    "wd_node": "wd:Q69948433",
+                    "wd_description": "professional medical personnel who provide care to patients in an organized facility, institution or agency"
+                },
+                {
+                    "@id": "resin:Entities/10011/",
+                    "name": "investigator",
+                    "wd_label": "detective",
+                    "wd_node": "wd:Q842782",
+                    "wd_description": "investigator, either a member of a police agency or a private person"
+                },
+                {
+                    "@id": "resin:Entities/10012/",
+                    "name": "suspect",
+                    "wd_label": "suspect",
+                    "wd_node": "wd:Q224952",
+                    "wd_description": "known person suspected of committing a crime"
+                },
+                {
+                    "@id": "resin:Entities/10013/",
+                    "name": "prison",
+                    "wd_label": "prison",
+                    "wd_node": "wd:Q40357",
+                    "wd_description": "place in which people legally are physically confined and usually deprived of a range of personal freedoms"
+                },
+                {
+                    "@id": "resin:Entities/10014/",
+                    "name": "court",
+                    "wd_label": "court",
+                    "wd_node": "wd:Q41487",
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                },
+                {
+                    "@id": "resin:Entities/10015/",
+                    "name": "judge",
+                    "wd_label": "judge",
+                    "wd_node": "wd:Q16533",
+                    "wd_description": "official who presides over court proceedings"
+                },
+                {
+                    "@id": "resin:Entities/10016/",
+                    "name": "group of people",
+                    "wd_label": "human population",
+                    "wd_node": "wd:Q33829",
+                    "wd_description": "humans that live in the same locality"
+                },
+                {
+                    "@id": "resin:Entities/10017/",
+                    "name": "components",
+                    "wd_label": "component",
+                    "wd_node": "wd:Q1310239",
+                    "wd_description": "smaller, self-contained part of technical entity consisting of components"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "resin:Relations/40000/",
+                    "name": "member of",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10014/",
+                    "wd_node": "wd:Q21503252",
+                    "wd_description": "relation of type constraints",
+                    "wd_label": "instance of"
+                },
+                {
+                    "@id": "resin:Relations/40001/",
+                    "name": "member of",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10003/",
+                    "wd_node": "wd:Q21503252",
+                    "wd_description": "relation of type constraints",
+                    "wd_label": "instance of"
+                },
+                {
+                    "@id": "resin:Relations/40002/",
+                    "name": "member of",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10003/",
+                    "wd_node": "wd:Q21503252",
+                    "wd_description": "relation of type constraints",
+                    "wd_label": "instance of"
+                },
+                {
+                    "@id": "resin:Relations/40003/",
+                    "name": "member of",
+                    "relationSubject": "resin:Entities/10001/",
+                    "relationObject": "resin:Entities/10016/",
+                    "wd_node": "wd:Q21503252",
+                    "wd_description": "relation of type constraints",
+                    "wd_label": "instance of"
+                },
+                {
+                    "@id": "resin:Relations/40004/made_from_material",
+                    "name": "made from material",
+                    "relationSubject": "resin:Entities/10000/",
+                    "relationObject": "resin:Entities/10017/",
+                    "wd_node": "wdt:P186",
+                    "wd_label": "made from material",
+                    "wd_description": "material the subject or the object is made of or derived from (do not confuse with P10672 which is used for processes)"
+                },
+                {
+                    "@id": "resin:Relations/40005/located_in",
+                    "name": "located in",
+                    "relationSubject": "resin:Entities/10000/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "resin:Relations/40006/assembled",
+                    "name": "assembled",
+                    "relationSubject": "resin:Entities/10001/",
+                    "relationObject": "resin:Entities/10017/",
+                    "wd_node": "wd:Q27132362",
+                    "wd_label": "placed",
+                    "wd_description": "put/assembled/erected at a location"
+                },
+                {
+                    "@id": "resin:Relations/40007/commit",
+                    "name": "commit",
+                    "relationSubject": "resin:Entities/10001/",
+                    "relationObject": "resin:Entities/10006/",
+                    "wd_node": "wd:Q29142",
+                    "wd_label": "attempt",
+                    "wd_description": "occurs if a criminal has an intent to commit a crime and takes a substantial step toward completing the crime"
+                },
+                {
+                    "@id": "resin:Relations/40008/located",
+                    "name": "located",
+                    "relationSubject": "resin:Entities/10006/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "resin:Relations/40009/located",
+                    "name": "located",
+                    "relationSubject": "resin:Entities/10000/",
+                    "relationObject": "resin:Entities/10002/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "resin:Relations/40010/located",
+                    "name": "located",
+                    "relationSubject": "resin:Entities/10003/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wdt:P276",
+                    "wd_label": "location",
+                    "wd_description": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object."
+                },
+                {
+                    "@id": "resin:Relations/40011/ensures_safety_of",
+                    "name": "ensures safety of",
+                    "relationSubject": "resin:Entities/10007/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q21010924",
+                    "wd_label": "safety precaution",
+                    "wd_description": "preventative measure taken to ensure health"
+                },
+                {
+                    "@id": "resin:Relations/40012/treated_at",
+                    "name": "treated at",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q179661",
+                    "wd_label": "treatment",
+                    "wd_description": "attempted medical remediation of a health problem"
+                },
+                {
+                    "@id": "resin:Relations/40013/treated_by",
+                    "name": "treated by",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10010/",
+                    "wd_node": "wd:Q179661",
+                    "wd_label": "treatment",
+                    "wd_description": "attempted medical remediation of a health problem"
+                },
+                {
+                    "@id": "resin:Relations/40014/employed_at",
+                    "name": "employed at",
+                    "relationSubject": "resin:Entities/10010/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wd:Q656365",
+                    "wd_label": "employment",
+                    "wd_description": "relationship between the employee and employer"
+                },
+                {
+                    "@id": "resin:Relations/40015/relocated_to",
+                    "name": "relocated to",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10009/",
+                    "wd_node": "wd:Q2918584",
+                    "wd_label": "relocation",
+                    "wd_description": "process of vacating a fixed location and settling in a different one"
+                },
+                {
+                    "@id": "resin:Relations/40016/removed_from",
+                    "name": "removed from",
+                    "relationSubject": "resin:Entities/10008/",
+                    "relationObject": "resin:Entities/10002/",
+                    "wd_node": "wd:Q23009442",
+                    "wd_label": "removal",
+                    "wd_description": "taking away, separation, or removal of an item"
+                },
+                {
+                    "@id": "resin:Relations/40017/perpetrator_of",
+                    "name": "perpetrator of",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10006/",
+                    "wd_node": "wd:Q18028810",
+                    "wd_label": "perpetrator",
+                    "wd_description": "person who carries out the active part of an act"
+                },
+                {
+                    "@id": "resin:Relations/40018/imprisoned_at",
+                    "name": "imprisoned at",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10013/",
+                    "wd_node": "wd:Q841236",
+                    "wd_label": "restraint of a person's liberty by judicial or other detention",
+                    "wd_description": null
+                },
+                {
+                    "@id": "resin:Relations/40019/imprisoned_at",
+                    "name": "imprisoned at",
+                    "relationSubject": "resin:Entities/10012/",
+                    "relationObject": "resin:Entities/10013/",
+                    "wd_node": "wd:Q841236",
+                    "wd_label": "imprisonment",
+                    "wd_description": "restraint of a person's liberty by judicial or other detention"
+                },
+                {
+                    "@id": "resin:Relations/40020/seek to control/abuse",
+                    "name": "seek to control/abuse",
+                    "relationSubject": "resin:Entities/10016/",
+                    "relationObject": "resin:Entities/10002/",
+                    "wd_node": "wd:Q17009621",
+                    "wd_label": "abusive power and control",
+                    "wd_description": "behavior of an abusive person seeking to gain and maintain power and control"
+                },
+                {
+                    "@id": "resin:Relations/40021/commands",
+                    "name": "commands",
+                    "relationSubject": "resin:Entities/10005/",
+                    "relationObject": "resin:Entities/10001/",
+                    "wd_node": "wd:Q1665268",
+                    "wd_label": "command",
+                    "wd_description": "instruction that carries a duty to obey"
+                },
+                {
+                    "@id": "resin:Relations/40022/works_at",
+                    "name": "works at",
+                    "relationSubject": "resin:Entities/10001/",
+                    "relationObject": "resin:Entities/10004/",
+                    "wd_node": "wdt:P108",
+                    "wd_label": "employer",
+                    "wd_description": "person or organization for which the subject works"
+                },
+                {
+                    "@id": "resin:Relations/40023/provide_verdict",
+                    "name": "provide verdict",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10012/",
+                    "wd_node": "Q:13370881",
+                    "wd_label": "verdict",
+                    "wd_description": "legal term; guilty or not guilty"
+                },
+                {
+                    "@id": "resin:Relations/40024/hears_case",
+                    "name": "hears case",
+                    "relationSubject": "resin:Entities/10015/",
+                    "relationObject": "resin:Entities/10006/",
+                    "wd_node": "wd:Q545861",
+                    "wd_label": "legal hearing",
+                    "wd_description": "proceeding before a court or other decision-making body or officer"
+                }
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20001/Steps_kairos:Container:Contributory_Factors",
+            "children": [
+                "resin:Events/20006/Conflict-Demonstrate-Unspecified",
+                "resin:Events/20007/Conflict-Attack-Unspecified",
+                "resin:Events/20069/Ideological_Conflict"
+            ],
+            "children_gate": "or",
+            "comment": "container node",
+            "description": "The contributory factors that shows motives and backgrounds.",
+            "name": "Contributory Factors",
+            "repeatable": true,
+            "outlinks": [
+                "resin:Events/20002/Steps_kairos:Container:Planning"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20002/Steps_kairos:Container:Planning",
+            "children": [
+                "resin:Events/20008/Cognitive-TeachingTrainingLearning-Unspecified",
+                "resin:Events/20009/Contact-Contact-Correspondence",
+                "resin:Events/20010/Contact-RequestCommand-Unspecified",
+                "resin:Events/20011/Transaction-ExchangeBuySell-Unspecified",
+                "resin:Events/20012/ArtifactExistence-ManufactureAssemble-Unspecified"
+            ],
+            "children_gate": "or",
+            "comment": "container node",
+            "description": "The bomb making procedure.",
+            "name": "Planning",
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/20003/Steps_kairos:Container:Execution"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20003/Steps_kairos:Container:Execution",
+            "children": [
+                "resin:Events/20013/Contact-ThreatenCoerce-Broadcast",
+                "resin:Events/20015/Movement-Transportation-Unspecified",
+                "resin:Events/20014/Control-ImpedeInterfereWith-Unspecified",
+                "resin:Events/20017/Steps_kairos:Container:100",
+                "resin:Events/20020/Life-Injure-Unspecified",
+                "resin:Events/20021/Life-Die-Unspecified",
+                "resin:Events/20019/Steps_kairos:Container:101",
+                "resin:Events/20048/Death",
+                "resin:Events/20054/Loss",
+                "resin:Events/20060/Gathering",
+                "resin:Events/20061/Support"
+            ],
+            "children_gate": "or",
+            "comment": "container node",
+            "description": "The execution procedure to detonate the bomb.",
+            "name": "Execution",
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/20004/Steps_kairos:Container:Response"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20004/Steps_kairos:Container:Response",
+            "children": [
+                "resin:Events/20024/Movement-Transportation-Evacuation",
+                "resin:Events/20025/Conflict-Attack-Unspecified",
+                "resin:Events/20026/Conflict-Demonstrate-Unspecified",
+                "resin:Events/20027/Contact-Contact-Correspondence",
+                "resin:Events/20028/Steps_kairos:Primitives_Events_Identify_Suspect",
+                "resin:Events/20029/Control-ImpedeInterfereWith-Unspecified",
+                "resin:Events/20030/Cognitive-Inspection-SensoryObserve",
+                "resin:Events/20031/Medical-Intervention-Unspecified",
+                "resin:Events/20032/Steps_kairos:Container:103",
+                "resin:Events/20049/Reporting",
+                "resin:Events/20050/Propaganda",
+                "resin:Events/20051/Leadership",
+                "resin:Events/20053/Blame",
+                "resin:Events/20055/Social_Inclusion",
+                "resin:Events/20057/Outreach",
+                "resin:Events/20059/governance",
+                "resin:Events/20062/Amenity_offered",
+                "resin:Events/20063/Control",
+                "resin:Events/20064/Involvement",
+                "resin:Events/20065/Announcement",
+                "resin:Events/20067/Protection",
+                "resin:Events/20068/Hospitalization"
+            ],
+            "children_gate": "or",
+            "comment": "container node",
+            "description": "Response to the explosion.",
+            "name": "Response",
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/20005/Steps_kairos:Container:Investigation"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20005/Steps_kairos:Container:Investigation",
+            "children": [
+                "resin:Events/20035/Steps_kairos:Primitives_Events_accusation:1",
+                "resin:Events/20036/Steps_kairos:Primitives_Events_arrest:1",
+                "resin:Events/20037/Steps_kairos:Primitives_Events_detention:1",
+                "resin:Events/20038/Steps_kairos:Primitives_Events_conviction:1",
+                "resin:Events/20039/Steps_kairos:Primitives_Events_plea:1",
+                "resin:Events/20040/Steps_kairos:Primitives_Events_trial:1",
+                "resin:Events/20041/Steps_kairos:Primitives_Events_legal_hearing:1",
+                "resin:Events/20042/Steps_kairos:Primitives_Events_court_decision:1",
+                "resin:Events/20043/Steps_kairos:Container:101",
+                "resin:Events/20045/Steps_kairos:Primitives_Events_imprisonment:1",
+                "resin:Events/20046/Steps_kairos:Primitives_Events_execution:1",
+                "resin:Events/20052/public_speaking",
+                "resin:Events/20056/reading",
+                "resin:Events/20058/Taking_office",
+                "resin:Events/20066/search"
+            ],
+            "children_gate": "or",
+            "description": "Episode for Steps_kairos:container:5",
+            "name": "Criminal Investigation",
+            "repeatable": false,
+            "wd_node": "wd:Q1415338",
+            "wd_label": "criminal_investigation",
+            "wd_description": "in the legal sense exploration of a fact",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20006/Conflict-Demonstrate-Unspecified",
+            "description": "A demonstration event happening independently and possibly being the precursor to the detonation event.",
+            "name": "Demonstration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30000/demonstrator",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20007/Conflict-Attack-Unspecified",
+            "description": "Attack motivating the crime",
+            "name": "Motivating Attack",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30001/target",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/10016/"
+                }
+            ],
+            "wd_node": "wd:Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20008/Cognitive-TeachingTrainingLearning-Unspecified",
+            "description": "Learn to make IED",
+            "name": "Learn Manufacture Process",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30002/teacher-trainer",
+                    "roleName": "A0_pag_agent_teacher",
+                    "entity": "resin:Entities/10005/"
+                },
+                {
+                    "@id": "resin:Participants/30003/learner",
+                    "roleName": "A2_gol_recipient_student",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30004/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "wd_node": "wd:Q8434",
+            "wd_label": "education",
+            "wd_description": "learning in which knowledge and skills are transferred through teaching",
+            "outlinks": [
+                "resin:Events/20009/Contact-Contact-Correspondence"
+            ]
+        },
+        {
+            "@id": "resin:Events/20009/Contact-Contact-Correspondence",
+            "description": "Talk to leader",
+            "name": "Talk to Leader",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30005/participant",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/10005/"
+                },
+                {
+                    "@id": "resin:Participants/30006/location",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "outlinks": [
+                "resin:Events/20010/Contact-RequestCommand-Unspecified"
+            ]
+        },
+        {
+            "@id": "resin:Events/20010/Contact-RequestCommand-Unspecified",
+            "description": "Determine attack target",
+            "name": "Determine Attack Target",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30007/communicator",
+                    "roleName": "A0_pag_agent_commander",
+                    "entity": "resin:Entities/10005/"
+                },
+                {
+                    "@id": "resin:Participants/30008/recipient",
+                    "roleName": "A1_gol_recipient_impelled_agent",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30009/instrument",
+                    "roleName": "A2_ppt_topic_impelled_action",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30010/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "wd_node": "wd:Q7685924",
+            "wd_label": "targeting",
+            "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare",
+            "outlinks": [
+                "resin:Events/20011/Transaction-ExchangeBuySell-Unspecified"
+            ]
+        },
+        {
+            "@id": "resin:Events/20011/Transaction-ExchangeBuySell-Unspecified",
+            "description": "Purchase IED components",
+            "name": "Purchase Components",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30011/recipient",
+                    "roleName": "A2_com_co_agent_other_exchanger",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30012/acquired-entity",
+                    "roleName": "A1_ppt_theme_thing_being_traded",
+                    "entity": "resin:Entities/10017/"
+                }
+            ],
+            "wd_node": "wd:Q21651837",
+            "wd_label": "exchange_of_goods",
+            "wd_description": "transfer of equivalent goods to each other",
+            "outlinks": [
+                "resin:Events/20012/ArtifactExistence-ManufactureAssemble-Unspecified"
+            ]
+        },
+        {
+            "@id": "resin:Events/20012/ArtifactExistence-ManufactureAssemble-Unspecified",
+            "description": "Manufacture, assemble or produce IED using material components",
+            "name": "Assemble IED",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30013/manufacturerassembler",
+                    "roleName": "A0_pag_agent_creator",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30014/artifact",
+                    "roleName": "A1_prd_result_creation",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30015/components",
+                    "roleName": "A2_vsp_material_created_from_thing_changed",
+                    "entity": "resin:Entities/10017/"
+                },
+                {
+                    "@id": "resin:Participants/30016/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "wd_node": "wd:Q187939",
+            "wd_label": "manufacturing",
+            "wd_description": "industrial activity producing goods for sale using labor and machines",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20013/Contact-ThreatenCoerce-Broadcast",
+            "description": "Threaten populace by announcing the attack",
+            "name": "Announce Attack",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30017/communicator",
+                    "roleName": "A0_pag_agent_persuasive_entity",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30018/recipient",
+                    "roleName": "A1_ppt_patient_impelled_person",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30019/topic",
+                    "roleName": "A2_prd_result_action_or_Result",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30020/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q325980",
+            "wd_label": "coercion",
+            "wd_description": "practice of forcing another party to act in an involuntary manner by use of threats or force",
+            "outlinks": [
+                "resin:Events/20014/Control-ImpedeInterfereWith-Unspecified",
+                "resin:Events/20015/Movement-Transportation-Unspecified",
+                "resin:Events/20016/Conflict-Attack-DetonateExplode"
+            ]
+        },
+        {
+            "@id": "resin:Events/20014/Control-ImpedeInterfereWith-Unspecified",
+            "description": "Police move in to interfere with and attempt to neutralize IED.",
+            "name": "Attempt to Neutralize IED",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30021/Intervener",
+                    "roleName": "A0_pag_nosy_individual",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30022/Intervened",
+                    "roleName": "A1_ppt_intervene_in",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30023/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q5185976",
+            "wd_label": "crisis intervention",
+            "wd_description": "time-limited intervention with the goal of immediate crisis stabilization",
+            "outlinks": [
+                "resin:Events/20017/Steps_kairos:Container:100"
+            ]
+        },
+        {
+            "@id": "resin:Events/20015/Movement-Transportation-Unspecified",
+            "description": "Move IED to target location.",
+            "name": "Move IED",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30024/transporter",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30025/passenger-artifact",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30026/origin",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "resin:Entities/10004/"
+                },
+                {
+                    "@id": "resin:Participants/30027/destination",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": [
+                "resin:Events/20016/Conflict-Attack-DetonateExplode"
+            ]
+        },
+        {
+            "@id": "resin:Events/20016/Conflict-Attack-DetonateExplode",
+            "description": "IED is detonated.",
+            "name": "Detonate IED",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30028/attacker",
+                    "roleName": "A0_pag_agent_attacker",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30029/target",
+                    "roleName": "A1_ppt_patient_entity_bombed",
+                    "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30030/instrument",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30031/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q891854",
+            "wd_label": "bomb_attack",
+            "wd_description": "action whereby a bomb is used to kill one or more people or to damage or destroy objects",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20017/Steps_kairos:Container:100",
+            "children": [
+                "resin:Events/20018/ArtifactExistence-DamageDestroyDisableDismantle-DisableDefuse",
+                "resin:Events/20016/Conflict-Attack-DetonateExplode"
+            ],
+            "children_gate": "xor",
+            "comment": "container node",
+            "description": "explosion",
+            "name": "Explosion",
+            "repeatable": false,
+            "outlinks": [
+                "resin:Events/20020/Life-Injure-Unspecified",
+                "resin:Events/20021/Life-Die-Unspecified",
+                "resin:Events/20019/Steps_kairos:Container:101"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20018/ArtifactExistence-DamageDestroyDisableDismantle-DisableDefuse",
+            "description": "IED is defused and disposed of.",
+            "name": "Defuse IED",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30032/disabler",
+                    "roleName": "A0_pag_agent_defuser",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30033/artifact",
+                    "roleName": "A1_ppt_patient_bomb",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30034/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q649416",
+            "wd_label": "bomb_disposal",
+            "wd_description": "activity to dispose of and render safe explosive munitions and other materials",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20019/Steps_kairos:Container:101",
+            "children": [
+                "resin:Events/20023/ArtifactExistence-DamageDestroyDisableDismantle-Damage",
+                "resin:Events/20022/ArtifactExistence-DamageDestroyDisableDismantle-Destroy"
+            ],
+            "children_gate": "xor",
+            "comment": "container node",
+            "description": "Damages and destructions",
+            "name": "Damages and destructions",
+            "repeatable": false,
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20020/Life-Injure-Unspecified",
+            "description": "Victims are injured from explosion.",
+            "name": "Injury from Explosion",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30035/victim",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30036/injurer",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30037/instrument",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30038/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "outlinks": [
+                "resin:Events/20048/Death",
+                "resin:Events/20061/Support"
+            ]
+        },
+        {
+            "@id": "resin:Events/20021/Life-Die-Unspecified",
+            "description": "Victims are killed from explosion.",
+            "name": "Killing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30039/Deceased",
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30040/Cause",
+                    "roleName": "AM_cau__cause",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30041/Place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q844482",
+            "wd_label": "killing",
+            "wd_description": "act of killing a living being",
+            "outlinks": [
+                "resin:Events/20054/Loss"
+            ]
+        },
+        {
+            "@id": "resin:Events/20022/ArtifactExistence-DamageDestroyDisableDismantle-Destroy",
+            "description": "Destruction from explosion.",
+            "name": "Destruction from Explosion",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30042/destroyer",
+                    "roleName": "A0_pag_agent_destroyer",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30043/artifact",
+                    "roleName": "A1_ppt_patient_thing_destroyed",
+                    "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30044/instrument",
+                    "roleName": "A2_mnr_instrument_instrument_of_destruction",
+                    "entity": "resin:Entities/10000/"
+                }
+            ],
+            "wd_node": "wd:Q17781833",
+            "wd_label": "destruction",
+            "wd_description": "concept of damage to an object, system or an idea",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20023/ArtifactExistence-DamageDestroyDisableDismantle-Damage",
+            "description": "Damage from explosion.",
+            "name": "Damage from Explosion",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30045/damager",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30046/artifact",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30047/instrument",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "resin:Entities/10000/"
+                }
+            ],
+            "wd_node": "wd:Q481609",
+            "wd_label": "damage",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20024/Movement-Transportation-Evacuation",
+            "description": "Evacuate target premises.",
+            "name": "Evacuate",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30048/passenger-artifact",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30049/origin",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30050/destination",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "resin:Entities/10009/"
+                }
+            ],
+            "wd_node": "wd:Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "outlinks": [
+                "resin:Events/20025/Conflict-Attack-Unspecified"
+            ]
+        },
+        {
+            "@id": "resin:Events/20025/Conflict-Attack-Unspecified",
+            "description": "Conflict after the explosion, possibly directed towards a group that the crime committer is a part of.",
+            "name": "Conflict",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30051/attacker",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30052/target",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "resin:Entities/10016/"
+                }
+            ],
+            "wd_node": "wd:Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "outlinks": [
+                "resin:Events/20026/Conflict-Demonstrate-Unspecified",
+                "resin:Events/20055/Social_Inclusion"
+            ]
+        },
+        {
+            "@id": "resin:Events/20026/Conflict-Demonstrate-Unspecified",
+            "description": "A demonstration event happening after the detonation event.",
+            "name": "Post-Attack Demonstration",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30053/demonstrator",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30054/topic",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30055/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": [
+                "resin:Events/20057/Outreach"
+            ]
+        },
+        {
+            "@id": "resin:Events/20027/Contact-Contact-Correspondence",
+            "description": "Contact authorities and inform them of the explosion.",
+            "name": "Contact Authorities",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30056/participant",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30057/topic",
+                    "roleName": "A1_ppt_topic_message",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30058/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "outlinks": [
+                "resin:Events/20028/Steps_kairos:Primitives_Events_Identify_Suspect",
+                "resin:Events/20029/Control-ImpedeInterfereWith-Unspecified",
+                "resin:Events/20030/Cognitive-Inspection-SensoryObserve",
+                "resin:Events/20031/Medical-Intervention-Unspecified",
+                "resin:Events/20051/Leadership",
+                "resin:Events/20059/governance",
+                "resin:Events/20067/Protection"
+            ]
+        },
+        {
+            "@id": "resin:Events/20028/Steps_kairos:Primitives_Events_Identify_Suspect",
+            "description": "Suspect is identified.",
+            "name": "Identify Suspect",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30059/Caller",
+                    "roleName": "A0_pag_agent_caller",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30060/Item_being_labelled",
+                    "roleName": "A1_ppt_theme_item_being_labelled",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30061/Attribute",
+                    "roleName": "A2_prd_attribute_attribute",
+                    "entity": "resin:Entities/10001/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q3265221",
+            "wd_label": "identification",
+            "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+            "outlinks": [
+                "resin:Events/20005/Steps_kairos:Container:Investigation"
+            ]
+        },
+        {
+            "@id": "resin:Events/20029/Control-ImpedeInterfereWith-Unspecified",
+            "description": "Defuse potential IEDs still in the area.",
+            "name": "Defuse Potential IEDs",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30062/Defuser",
+                    "roleName": "A0_pag_agent_defuser",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30063/Bomb",
+                    "roleName": "A1_ppt_patient_bomb",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30064/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q649416",
+            "wd_label": "bomb disposal",
+            "wd_description": "activity to dispose of and render safe explosive munitions and other materials",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20030/Cognitive-Inspection-SensoryObserve",
+            "description": "Observe damage of the target location.",
+            "name": "Inspect Damage",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30065/Observer",
+                    "roleName": "A0_pag_experiencer_observer",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30066/Thing_looked_at",
+                    "roleName": "A1_ppt_stimulus_thing_looked_at",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q193181",
+            "wd_label": "observation",
+            "wd_description": "active acquisition of information from a primary source",
+            "outlinks": [
+                "resin:Events/20053/Blame",
+                "resin:Events/20063/Control"
+            ]
+        },
+        {
+            "@id": "resin:Events/20031/Medical-Intervention-Unspecified",
+            "description": "Treat victims injured by the IED explosion.",
+            "name": "Medical Intervention",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30067/treater",
+                    "roleName": "A0_pag__doctor",
+                    "entity": "resin:Entities/10010/"
+                },
+                {
+                    "@id": "resin:Participants/30068/patient",
+                    "roleName": "A1_ppt__patient",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30069/medical-issue",
+                    "roleName": "A2_ppt__illness_or_injury",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30070/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10009/"
+                }
+            ],
+            "wd_node": "wd:Q179661",
+            "wd_label": "treatment",
+            "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+            "outlinks": [
+                "resin:Events/20032/Steps_kairos:Container:103",
+                "resin:Events/20068/Hospitalization"
+            ]
+        },
+        {
+            "@id": "resin:Events/20032/Steps_kairos:Container:103",
+            "children": [
+                "resin:Events/20033/Recovery",
+                "resin:Events/20034/Death"
+            ],
+            "children_gate": "xor",
+            "comment": "container node",
+            "description": "Medical Intervention outlinks",
+            "name": "Medical Intervention outlinks",
+            "repeatable": false,
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20033/Recovery",
+            "description": "victim recovers from injury",
+            "name": "Recovery",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30071/healer",
+                    "roleName": "A0_pag_healer",
+                    "entity": "resin:Entities/10010/"
+                },
+                {
+                    "@id": "resin:Participants/30072/injured",
+                    "roleName": "A1_ppt_injured",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30073/cause",
+                    "roleName": "A2-cau_X_cause",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "wd_node": "wd:Q7302970",
+            "wd_label": "recovery",
+            "wd_description": "Dateiwiederherstellungsprogramm",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20034/Death",
+            "description": "Death after medical intervention.",
+            "name": "Death",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30074/deceased",
+                    "roleName": "A1_ppt_the_deceased",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30075/cause",
+                    "roleName": "AM_cau__cause",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30076/place",
+                    "roleName": "AM_loc__location",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "wd_node": "wd:Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20035/Steps_kairos:Primitives_Events_accusation:1",
+            "comment": "There is an accusation that the IED was planted by the suspect.",
+            "description": "act of accusing or charging another with a crime",
+            "name": "accusation",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30077/kairos:Primitives_Events_accusation:1:accuser",
+                    "roleName": "A0_pag_agent_accuser",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30078/kairos:Primitives_Events_accusation:1:accused",
+                    "roleName": "A1_ppt_theme_accused",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30079/kairos:Primitives_Events_accusation:1:crime",
+                    "roleName": "A2_prd_attribute_crime",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q19357312",
+            "wd_label": "accusation",
+            "wd_description": "act of accusing or charging another with a crime",
+            "outlinks": [
+                "resin:Events/20036/Steps_kairos:Primitives_Events_arrest:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20036/Steps_kairos:Primitives_Events_arrest:1",
+            "comment": "Detention of a person and taking it into custody, usually because it has been suspected of committing a crime.",
+            "description": "detention of a person and taking it into custody, usually because it has been suspected of committing a crime",
+            "name": "arrest",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30080/kairos:Primitives_Events_arrest:1:police",
+                    "roleName": "A0_pag__police",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30081/kairos:Primitives_Events_arrest:1:criminal",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30082/kairos:Primitives_Events_arrest:1:crime",
+                    "roleName": "A2_cau__crime",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "outlinks": [
+                "resin:Events/20037/Steps_kairos:Primitives_Events_detention:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20037/Steps_kairos:Primitives_Events_detention:1",
+            "comment": "Removal of the freedom of liberty by a state.",
+            "description": "removal of the freedom of liberty by a state",
+            "name": "detention",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30083/kairos:Primitives_Events_detention:1:police",
+                    "roleName": "A0_pag_police",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30084/kairos:Primitives_Events_detention:1:entity_detained",
+                    "roleName": "A1_ppt_entity_detained",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30085/kairos:Primitives_Events_detention:1:detained_for_what?",
+                    "roleName": "A2_cau_detained_for_what?",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q1071447",
+            "wd_label": "detention",
+            "wd_description": "removal of the freedom of liberty by a state",
+            "outlinks": [
+                "resin:Events/20038/Steps_kairos:Primitives_Events_conviction:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20038/Steps_kairos:Primitives_Events_conviction:1",
+            "comment": "Verdict that results when a court of law finds a defendant guilty of a crime.",
+            "description": "verdict that results when a court of law finds a defendant guilty of a crime",
+            "name": "conviction",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30086/kairos:Primitives_Events_conviction:1:judge",
+                    "roleName": "A0_pag__judge",
+                    "entity": "resin:Entities/10015/"
+                },
+                {
+                    "@id": "resin:Participants/30087/kairos:Primitives_Events_conviction:1:person_convicted",
+                    "roleName": "A1_ppt__person_convicted",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30088/kairos:Primitives_Events_conviction:1:convicted_of",
+                    "roleName": "A2_cau__convicted_of",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q2916183",
+            "wd_label": "conviction",
+            "wd_description": "verdict that results when a court of law finds a defendant guilty of a crime",
+            "outlinks": [
+                "resin:Events/20039/Steps_kairos:Primitives_Events_plea:1",
+                "resin:Events/20040/Steps_kairos:Primitives_Events_trial:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20039/Steps_kairos:Primitives_Events_plea:1",
+            "comment": "Answer to a claim made by someone in a criminal case under common law using the adversarial system.",
+            "description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+            "name": "plea",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30089/kairos:Primitives_Events_plea:1:the_accused",
+                    "roleName": "A0_pag_the_accused",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30090/kairos:Primitives_Events_plea:1:alleged_crime",
+                    "roleName": "A2_gol_alleged_crime",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q15916459",
+            "wd_label": "plea",
+            "wd_description": "answer to a claim made by someone in a criminal case under common law using the adversarial system",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20040/Steps_kairos:Primitives_Events_trial:1",
+            "comment": "Coming together of parties to a dispute, to present information in a tribunal.",
+            "description": "coming together of parties to a dispute, to present information in a tribunal",
+            "name": "trial",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30091/kairos:Primitives_Events_trial:1:entity_tried",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30092/kairos:Primitives_Events_trial:1:tried_for",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "outlinks": [
+                "resin:Events/20041/Steps_kairos:Primitives_Events_legal_hearing:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20041/Steps_kairos:Primitives_Events_legal_hearing:1",
+            "comment": "A legal hearing.",
+            "description": "A legal hearing",
+            "name": "legal_hearing",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30093/kairos:Primitives_Events_legal_hearing:1:judge",
+                    "roleName": "A0_pag__judge",
+                    "entity": "resin:Entities/10015/"
+                },
+                {
+                    "@id": "resin:Participants/30094/kairos:Primitives_Events_legal_hearing:1:person_on_trial",
+                    "roleName": "A1_ppt__person_on_trial",
+                    "entity": "resin:Entities/10012/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q545861",
+            "wd_label": "legal_hearing",
+            "wd_description": "A legal hearing",
+            "outlinks": [
+                "resin:Events/20042/Steps_kairos:Primitives_Events_court_decision:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20042/Steps_kairos:Primitives_Events_court_decision:1",
+            "comment": "Formal decision made by a court.",
+            "description": "formal decision made by a court",
+            "name": "court_decision",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30095/kairos:Primitives_Events_court_decision:1:judge",
+                    "roleName": "A0_pag_agent_judge",
+                    "entity": "resin:Entities/10015/"
+                },
+                {
+                    "@id": "resin:Participants/30096/kairos:Primitives_Events_court_decision:1:judged",
+                    "roleName": "A1_ppt_theme_judged",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30097/kairos:Primitives_Events_court_decision:1:on_what_grounds",
+                    "roleName": "A3_cau__on_what_grounds",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q327000",
+            "wd_label": "court_decision ",
+            "wd_description": "formal decision made by a court",
+            "outlinks": [
+                "resin:Events/20043/Steps_kairos:Container:101"
+            ]
+        },
+        {
+            "@id": "resin:Events/20043/Steps_kairos:Container:101",
+            "children": [
+                "resin:Events/20044/Steps_kairos:Primitives_Events_sentence:1",
+                "resin:Events/20047/Steps_kairos:Primitives_Events_acquittal:1"
+            ],
+            "children_gate": "xor",
+            "comment": "container node",
+            "description": "Possible outcomes of the court decision.",
+            "name": "Court Decision outlinks",
+            "repeatable": false,
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "resin:Events/20044/Steps_kairos:Primitives_Events_sentence:1",
+            "comment": "Decree of punishment in law.",
+            "description": "decree of punishment in law",
+            "name": "sentence",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30098/kairos:Primitives_Events_sentence:1:judge_jury",
+                    "roleName": "A0_pag__judge_jury",
+                    "entity": "resin:Entities/10015/"
+                },
+                {
+                    "@id": "resin:Participants/30099/kairos:Primitives_Events_sentence:1:criminal",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30100/kairos:Primitives_Events_sentence:1:crime",
+                    "roleName": "A3_cau__crime",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30101/kairos:Primitives_Events_sentence:1:punishment",
+                    "roleName": "A2_ppt__punishment",
+                    "entity": "resin:Entities/10013/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q1763090",
+            "wd_label": "sentence",
+            "wd_description": "decree of punishment in law",
+            "outlinks": [
+                "resin:Events/20052/public_speaking"
+            ]
+        },
+        {
+            "@id": "resin:Events/20045/Steps_kairos:Primitives_Events_imprisonment:1",
+            "comment": "Restraint of a person's liberty by judicial or other detention.",
+            "description": "restraint of a person's liberty by judicial or other detention",
+            "name": "imprisonment",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30102/kairos:Primitives_Events_imprisonment:1:police",
+                    "roleName": "A0_pag_agent_police",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30103/kairos:Primitives_Events_imprisonment:1:entity_detained",
+                    "roleName": "A1_ppt_patient_entity_detained",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30104/kairos:Primitives_Events_imprisonment:1:detained_for_what",
+                    "roleName": "A2_cau_theme_detained_for_what",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30105/detained_location",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10013/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q841236",
+            "wd_label": "imprisonment",
+            "wd_description": "restraint of a person's liberty by judicial or other detention",
+            "outlinks": [
+                "resin:Events/20046/Steps_kairos:Primitives_Events_execution:1"
+            ]
+        },
+        {
+            "@id": "resin:Events/20046/Steps_kairos:Primitives_Events_execution:1",
+            "comment": "Homicide as capital punishment.",
+            "description": "homicide as capital punishment",
+            "name": "execution",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30106/kairos:Primitives_Events_execution:1:corpse",
+                    "roleName": "A1_ppt_patient_corpse",
+                    "entity": "resin:Entities/10012/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q3966286",
+            "wd_label": "execution",
+            "wd_description": "homicide as capital punishment",
+            "outlinks": []
+        },
+        {
+            "@id": "resin:Events/20047/Steps_kairos:Primitives_Events_acquittal:1",
+            "comment": "The legal result of a verdict of not guilty.",
+            "description": "the legal result of a verdict of not guilty",
+            "name": "acquittal",
+            "participants": [
+                {
+                    "@id": "resin:Participants/30107/kairos:Primitives_Events_acquittal:1:remover_of_guilt",
+                    "roleName": "A0_cau_remover_of_guilt",
+                    "entity": "resin:Entities/10015/"
+                },
+                {
+                    "@id": "resin:Participants/30108/kairos:Primitives_Events_acquittal:1:unguilty_person",
+                    "roleName": "A1_dir_source_unguilty_person",
+                    "entity": "resin:Entities/10012/"
+                },
+                {
+                    "@id": "resin:Participants/30109/kairos:Primitives_Events_acquittal:1:explicit_mention_of_guilt",
+                    "roleName": "A2_ppt_theme_explicit_mention_of_guilt",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30110/location",
+                    "roleName": "AM_loc",
+                    "entity": "resin:Entities/10014/"
+                }
+            ],
+            "repeatable": false,
+            "wd_node": "wd:Q1454723",
+            "wd_label": "acquittal",
+            "wd_description": "the legal result of a verdict of not guilty",
+            "outlinks": [
+                "resin:Events/20052/public_speaking"
+            ]
+        },
+        {
+            "@id": "resin:Events/20048/Death",
+            "name": "Death",
+            "description": "Death from injury.",
+            "wd_node": "wd:Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20054/Loss"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30111/deceased",
+                    "roleName": "A0_ppt_deseased",
+                    "entity": "resin:Entities/10008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20049/Reporting",
+            "name": "Reporting",
+            "description": "Event is reported on the news.",
+            "wd_node": "wd:Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20050/Propaganda"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30112/reporter",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30113/thing_reported",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "resin:Entities/10000/"
+                },
+                {
+                    "@id": "resin:Participants/30114/reported_to",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20050/Propaganda",
+            "name": "Propaganda",
+            "description": "Misinformation is spread.",
+            "wd_node": "Q483677",
+            "wd_label": "pseudoscience",
+            "wd_description": "unscientific claims wrongly presented as scientific",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30115/claimer",
+                    "roleName": "A0_pag_claimer",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30116/claimed",
+                    "roleName": "A1_ppt_thing_claimed",
+                    "entity": "resin:Entities/10001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20051/Leadership",
+            "name": "Leadership",
+            "description": "Leadership takes command of the situation.",
+            "wd_node": "wd:Q484275",
+            "wd_label": "leadership",
+            "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30117/leader",
+                    "roleName": "A0_pag_leader",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30118/entity_led",
+                    "roleName": "A1_ppt_entity_lead",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20052/public_speaking",
+            "name": "public speaking",
+            "description": "result of trial is announced",
+            "wd_node": "wd:Q18342738",
+            "wd_label": "public speaking",
+            "wd_description": "process and act of speaking or giving a lecture to a group of people in a structured, deliberate manner intended to inform, influence, or entertain a listening audience",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20045/Steps_kairos:Primitives_Events_imprisonment:1"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30119/talker",
+                    "roleName": "A0_pag_talker",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30120/subject",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "resin:Entities/10000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20053/Blame",
+            "name": "Blame",
+            "description": "Blame for the attack is announced.",
+            "wd_node": "wd:Q621695",
+            "wd_label": "blame",
+            "wd_description": "act of censuring, holding responsible, making negative statements about an individual or group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30121/blamer",
+                    "roleName": "A0_pag_blamer",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30122/blamed",
+                    "roleName": "A1_ppt_entity_blamed",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30123/blamed_for",
+                    "roleName": "A2_prd_blame_for_what",
+                    "entity": "resin:Entities/10000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20054/Loss",
+            "name": "Loss",
+            "description": "Loss of life is experienced.",
+            "wd_node": "wd:Q3030513",
+            "wd_label": "disappearance",
+            "wd_description": "action of disappearing or vanishing",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30124/entity_losing_something",
+                    "roleName": "A0_pag_entity_losing_something",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30125/thing_lost",
+                    "roleName": "A1_ppt_thing_lost",
+                    "entity": "resin:Entities/10008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20055/Social_Inclusion",
+            "name": "Social Exclusion",
+            "description": "Community reacts to the attack.",
+            "wd_node": "wd:Q3149923",
+            "wd_label": "social inclusion",
+            "wd_description": "affirmative action to change the circumstances and habits that lead to (or have led to) social exclusion",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30126/cause_of_isolation",
+                    "roleName": "A0_pag_entity_causing_isolation",
+                    "entity": "resin:Entities/10006/"
+                },
+                {
+                    "@id": "resin:Participants/30127/isolated",
+                    "roleName": "A1_ppt_entity_isolated",
+                    "entity": "resin:Entities/10001/"
+                },
+                {
+                    "@id": "resin:Participants/30128/isolated_from",
+                    "roleName": "A2_dir_entity_that_patient_was_isolated_from",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20056/reading",
+            "name": "Evidence Reviewed",
+            "description": "Evidence is reviewed of the attack.",
+            "wd_node": "wd:Q199657",
+            "wd_label": "reading",
+            "wd_description": "cognitive process of decoding symbols to derive meaning; a form of language processing",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20042/Steps_kairos:Primitives_Events_court_decision:1"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30129/reviewer",
+                    "roleName": "A0_pag_discussant",
+                    "entity": "resin:Entities/10011/"
+                },
+                {
+                    "@id": "resin:Participants/30130/discussed",
+                    "roleName": "A1_ppt_thing_discussed",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20057/Outreach",
+            "name": "Outreach",
+            "description": "Social outreach to benefit victims.",
+            "wd_node": "wd:Q11640",
+            "wd_label": "outreach",
+            "wd_description": "activity of providing services to populations who might not otherwise have access to those services",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30131/offering",
+                    "roleName": "A0_pag_entity_offering",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30132/offered_to",
+                    "roleName": "A2_gol_benefactive_or_entity_offered_to",
+                    "entity": "resin:Entities/10008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20058/Taking_office",
+            "name": "Taking office",
+            "description": "Authority takes position of power",
+            "wd_node": "wd:Q28530236",
+            "wd_label": "taking office",
+            "wd_description": "procedure, event start work in the post",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20035/Steps_kairos:Primitives_Events_accusation:1"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30133/Investigator",
+                    "roleName": "A0_pag_Agent",
+                    "entity": "resin:Entities/10011/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20059/governance",
+            "name": "governance",
+            "description": "The general population is governed.",
+            "wd_node": "wd:Q1553864",
+            "wd_label": "governance",
+            "wd_description": "all of the processes of governing, whether undertaken by a government, market or network, whether over a family, tribe, formal or informal organization or territory and whether through the laws, norms, power or language of an organized society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "resin:Events/20062/Amenity_offered"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30134/governer",
+                    "roleName": "A0_pag_governor",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30135/public",
+                    "roleName": "A1_ppt_governed",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20060/Gathering",
+            "name": "Gathering",
+            "description": "General public is gathered.",
+            "wd_node": "Q108634029",
+            "wd_label": "gathering",
+            "wd_description": "act of bringing items together",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20013/Contact-ThreatenCoerce-Broadcast"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30136/causer",
+                    "roleName": "A0_pag_agent_or_causer",
+                    "entity": "resin:Entities/10002/"
+                },
+                {
+                    "@id": "resin:Participants/30137/gathered",
+                    "roleName": "A1_ppt_entity_gathered",
+                    "entity": "resin:Entities/10003/"
+                },
+                {
+                    "@id": "resin:Participants/30138/location",
+                    "roleName": "A2_gol_gathered_into",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20061/Support",
+            "name": "Support",
+            "description": "The general public attempts to help victims.",
+            "wd_node": "wd:Q1643184",
+            "wd_label": "help",
+            "wd_description": "cooperation between living beings",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30139/helper",
+                    "roleName": "A0_pag_helper",
+                    "entity": "resin:Entities/10010/"
+                },
+                {
+                    "@id": "resin:Participants/30140/victims",
+                    "roleName": "A1_ppt_person",
+                    "entity": "resin:Entities/10008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20062/Amenity_offered",
+            "name": "Amenity offered",
+            "description": "Amenity is offered by the police.",
+            "wd_node": "wd:Q867393",
+            "wd_label": "amenity",
+            "wd_description": "infrastructure available for use and improving quality of life",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30141/provider",
+                    "roleName": "A0_pag_provider",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30142/provided_for",
+                    "roleName": "A2_gol_entity_provided_for",
+                    "entity": "resin:Entities/10008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20063/Control",
+            "name": "Control",
+            "description": "Police control the situation.",
+            "wd_node": "wd:Q29017603",
+            "wd_label": "control",
+            "wd_description": "complete authority over something; ability to fully direct the operation of a device, system, or process",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30143/controller",
+                    "roleName": "A0_pag_controller",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30144/controlled",
+                    "roleName": "A1_ppt_controlled",
+                    "entity": "resin:Entities/10003/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20064/Involvement",
+            "name": "Involvement",
+            "description": "Medical staff are involved.",
+            "wd_node": "wd:Q36949023",
+            "wd_label": "involvement",
+            "wd_description": "state of being involved (e.g. in a process or event)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20031/Medical-Intervention-Unspecified"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30145/causer",
+                    "roleName": "A0_pag_causer_of_inclusion",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30146/theme",
+                    "roleName": "A1_ppt_theme",
+                    "entity": "resin:Entities/10010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20065/Announcement",
+            "name": "Announcement",
+            "description": "Event is publicly announced.",
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "resin:Events/20049/Reporting"
+            ],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30147/announcer",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30148/utterance",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "resin:Entities/10006/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20066/search",
+            "name": "search",
+            "description": "Criminal is searched for.",
+            "wd_node": "wd:Q11540953",
+            "wd_label": "search",
+            "wd_description": "search for target data from a set of data",
+            "isSchema": false,
+            "repeatable": true,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30149/searcher",
+                    "roleName": "A0_pag_searcher",
+                    "entity": "resin:Entities/10011/"
+                },
+                {
+                    "@id": "resin:Participants/30150/location",
+                    "roleName": "A1_loc_Area_searched",
+                    "entity": "resin:Entities/10004/"
+                },
+                {
+                    "@id": "resin:Participants/30151/searched_for",
+                    "roleName": "A2_ppt_searched_for",
+                    "entity": "resin:Entities/10001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20067/Protection",
+            "name": "Protection",
+            "description": "action or precaution against a threat",
+            "wd_node": "wd:Q2251595",
+            "wd_label": "protection",
+            "wd_description": "action or precaution against a threat",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30152/Police",
+                    "roleName": "A0_pag_protector",
+                    "entity": "resin:Entities/10007/"
+                },
+                {
+                    "@id": "resin:Participants/30153/Mosque",
+                    "roleName": "A1_ppt_entity_protected",
+                    "entity": "resin:Entities/10004/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20068/Hospitalization",
+            "name": "Hospitalization",
+            "description": "admission of a patient to a hospital",
+            "wd_node": "wd:Q3140971",
+            "wd_label": "hospitalization",
+            "wd_description": "admission of a patient to a hospital",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30154/hospital",
+                    "roleName": "A2_loc_location",
+                    "entity": "resin:Entities/10004/"
+                },
+                {
+                    "@id": "resin:Participants/30155/victims",
+                    "roleName": "A1_ppt_patient",
+                    "entity": "resin:Entities/10008/"
+                },
+                {
+                    "@id": "resin:Participants/30156/medical_staff",
+                    "roleName": "A0_pag_doctor",
+                    "entity": "resin:Entities/10010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "resin:Events/20069/Ideological_Conflict",
+            "name": "Ideological Conflict",
+            "description": "",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "resin:Participants/30157/group_of_humans",
+                    "roleName": "A0_pag_clasher",
+                    "entity": "resin:Entities/10016/"
+                },
+                {
+                    "@id": "resin:Participants/30158/geographic_region",
+                    "roleName": "A2_ppt_entity_clashed_over",
+                    "entity": "resin:Entities/10002/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}
