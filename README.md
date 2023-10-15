@@ -25,7 +25,7 @@ Here, the input document clusters should be formatted in JSON, where each key is
 For the other two command-line arguments, you can use any name you want for your `CLUSTER_NAME` and the preprocessed dataset is generated under `OUTPUT_DIR`.
 
 ### Setup the APIs
-1. Specify the `${KAIROS_LIB}` dir (to store intermediate results and outputs) at https://github.com/RESIN-KAIROS/RESIN-pipeline2023/blob/084bb05d6e2cd6d84bebe79bb22777a8cc7d367f/docker-compose.yaml#L8
+1. Specify the `${KAIROS_LIB}` dir (to store intermediate results and outputs) at https://github.com/blender-nlp/RESIN/blob/4782efcce8c642c8ab3a8000fb8d441492080703/docker-compose.yaml#L8
 2. Go to `${KAIROS_LIB}` and then run `./create_folders.sh` to create the folders for inputs and outputs. 
 3. Set up the device number for each GPU-based component, e.g.,https://github.com/RESIN-KAIROS/RESIN-pipeline2023/blob/084bb05d6e2cd6d84bebe79bb22777a8cc7d367f/docker-compose.yaml#L38 NOTE: Running the whole pipeline typically needs at least 3*16GB GPUs.
 4. Start the APIs by running: `docker-compose up`. It could be pretty slow when you set up the APIs for the first time, since docker-compose needs to pull all the dockers from dockerhub before running it.
