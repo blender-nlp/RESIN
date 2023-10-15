@@ -1,0 +1,96 @@
+version: "2"
+
+volumes:
+  root:
+    driver: local
+    driver_opts:
+      type: none
+      device: /shared/nas/data/users/zixuan11/projects/kairos_eval/docker/runs/
+      o: bind
+
+services:
+  main:
+    image: zixuan11/kairos_main_api:api
+    container_name: main
+    command: python ./main.py ${KAIROS_LIB} --experiment ${EXPERIMENT} --performer ${PERFORMER_NAME} --port 10100 --trigger_addr trigger:20201 --argument_addr argument:20202 --coref_addr coref:20203 --temporal_addr temporal:20204 --mt_addr mt:20205 --matching_addr matching:20206 --visual_addr visual:20209 --input_mt_addr input-mt:20200 
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 10100:10100 # For local docker-compose test
+
+  input-mt:
+    image: fishinnorthernmostsea/kairos_input_mt:lang
+    container_name: input-mt
+    command: bash -c "python main.py -p 20200 -k 998e06f93b9c7bb9d7ff8ed4f1f0ff7aa6186b27946acd616847355278936375"
+    ports:
+      - 20200:20200 # For local docker-compose test
+
+  trigger:
+    image: qiusi/glen:latest
+    container_name: trigger
+    command: bash -c "
+      python server.py --port 20201"
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 20201:20201 # For local docker-compose test
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0 # For local docker-compose test
+    labels:
+      - gpu
+
+  argument:
+    image: raspberryice/gen-arg:1.0
+    container_name: gen-arg
+    command: bash -c "
+      conda run -n genie-v2 --no-capture-output python app.py --port=20202"
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 20202:20202 # For local docker-compose test
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0 # For local docker-compose test
+    labels:
+      - gpu
+
+  coref:
+    image: laituan245/kairos-el-and-coref:latest
+    container_name: coref
+    command: bash -c "
+      /opt/conda/envs/aida_coreference/bin/python3.6 main.py --port 20203"
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 20203:20203 # For local docker-compose test
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=1 # For local docker-compose test
+    labels:
+      - gpu
+
+  temporal:
+    image: jxmxtww/kairos_temporal_xiaomeng:new1
+    container_name: temporal
+    command: bash -c "
+      python test_server.py --port 20204"
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 20204:20204 # For local docker-compose test
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=1 # For local docker-compose test
+    labels:
+      - gpu
+
+  matching:
+    image: zixuan11/kairos-prediction:10.0
+    container_name: matching
+    command: bash -c "
+      python server.py --port 20206"
+    volumes:
+      - root:${KAIROS_LIB}
+    ports:
+      - 20206:20206 # For local docker-compose test
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0 # For local docker-compose test
+    labels:
+      - gpu
